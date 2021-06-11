@@ -1,0 +1,160 @@
+.tns-inner {
+  overflow: hidden;
+}
+.tns-visually-hidden {
+  display: none;
+}
+.tns-controls {
+  position: relative;
+}
+.prevButton,
+.nextButton {
+  position: absolute;
+  border: none;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  background: inherit;
+  cursor: pointer;
+  display: inline-block;
+  color: $glide;
+}
+.prevButton {
+  left: -50px;
+}
+.nextButton {
+  right: -50px;
+}
+@include media-up(xl) {
+  .prevButton,
+  .nextButton {
+    top: 100px;
+  }
+  .navButton--3,
+  .navButton--4,
+  .navButton--5,
+  .navButton--6,
+  .navButton--7,
+  .navButton--8 {
+    display: none;
+  }
+}
+@include media-only(lg) {
+  .prevButton,
+  .nextButton {
+    top: 70px;
+  }
+  .navButton--3,
+  .navButton--4,
+  .navButton--5,
+  .navButton--6,
+  .navButton--7,
+  .navButton--8 {
+    display: none;
+  }
+}
+@include media-only(md) {
+  .prevButton,
+  .nextButton {
+    top: 60px;
+  }
+  .navButton--4,
+  .navButton--5,
+  .navButton--6,
+  .navButton--7,
+  .navButton--8 {
+    display: none;
+  }
+}
+@include media-only(sm) {
+  .prevButton,
+  .nextButton {
+    top: 50px;
+  }
+  .prevButton {
+    left: -50px;
+  }
+  .nextButton {
+    right: -50px;
+  }
+  .navButton--7,
+  .navButton--8 {
+    display: none;
+  }
+}
+@include media-down(sm) {
+  .prevButton,
+  .nextButton {
+    top: 50px;
+  }
+  .prevButton {
+    left: -60px;
+  }
+  .nextButton {
+    right: -60px;
+  }
+}
+.nextButton::before {
+  content: "";
+  top: 30%;
+  left: 30%;
+  transform: rotate(45deg);
+  position: absolute;
+  border-top: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+  width: 15px;
+  height: 15px;
+}
+.prevButton::before {
+  content: "";
+  top: 30%;
+  left: 40%;
+  transform: rotate(-135deg);
+  position: absolute;
+  border-top: 3px solid currentColor;
+  border-right: 3px solid currentColor;
+  width: 15px;
+  height: 15px;
+}
+.prevButton:hover,
+.nextButton:hover {
+  box-shadow: 0 0 1px 1px $glide;
+  outline: none;
+}
+.prevButton:disabled,
+.nextButton:disabled {
+  color: #EDEDED;
+  box-shadow: 0 0 1px 1px #EDEDED;
+}
+.navContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.navButton {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin: 20px 20px 15px 20px;
+  padding: 5px;
+  background-color: $color-input;
+}
+@include media-down(md) {
+  .navButton {
+    margin: 10px 4px 15px 4px;
+    padding: 0px;
+    width: 10px;
+    height: 10px;
+  }
+}
+.navButton:hover,
+.navButton:focus {
+  background-color: $glide;
+  transform: scale(1.1);
+}
+.tns-nav-active {
+  background-color: $glide;
+}  

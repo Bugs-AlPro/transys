@@ -1,0 +1,25 @@
+{% set title = 'Transys' %}
+{% extends "templates/default.html" %}
+{% import "includes/macros.html" as variable %}
+
+{% set social = [
+{href: "#", svgname: "whatsapp"},
+{href: "#", svgname: "telegramm"},
+{href: "#", svgname: "instagramm"}
+]%}
+
+{% macro imageSvg(name, class, width, height) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
+  <use xlink:href='img/svg/sprite.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+{% macro imageSvgColor(name, class, width, height) %}
+<svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
+  <use xlink:href='img/svgcolor/sprite.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}
+
+{% block content %}
+
+
+{% endblock %}

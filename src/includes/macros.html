@@ -1,0 +1,82 @@
+{% macro popCategoryItem(href, nameImg, name) %}
+<li class="pop-category__item">
+  <a href="{{ href }}" class="pop-category__link">
+    {{ imageJpeg('pop-category__sourse', nameImg, 'pop-category__img', name) }}
+    <div class="pop-category__shadow">
+    </div>
+    <div class="pop-category__name">{{ name }}</div>
+  </a>
+</li>
+{% endmacro %}
+
+{% macro popItem(href, nameImg, name, oldPrice, typeDiscout, newPrice) %}
+<li class="pop-items__item">
+  <div class="pop-items__info">
+    <div class="pop-items__top">
+      <button type="button" class="pop-items__button">
+        {{ imageSvg('favor', 'pop-items__svg-top icon-favor svg') }}
+      </button>
+      <button type="button" class="pop-items__button">
+        {{ imageSvg('contrast', 'pop-items__svg-top icon-contrast svg') }}
+      </button>
+    </div>
+    {{ imageJpeg('pop-items__sourse', nameImg, 'pop-items__img', name) }}
+    <a href="{{ href }}" class="pop-items__name">{{ name|safe }}</a>
+    <div class="pop-items__bottom">
+      <div class="pop-items__price">
+        <div class="{{ typeDiscout }}">
+          <div class="pop-items__new-price">{{ newPrice }} ₽</div>
+        </div>
+        <div class="pop-items__old-price">
+          <div class="{{ typeDiscout }}">{{ oldPrice }} ₽</div>
+        </div>
+      </div>
+      <div class="pop-items__market">
+        <button type="button" class="pop-items__button">
+          {{ imageSvg('market', 'pop-items__svg icon-market svg') }}
+        </button>
+      </div>
+    </div>
+  </div>
+</li>
+{% endmacro %}
+
+{% macro suggestion(name, category, price, nameImg, href) %}
+<li class="suggestion__item">
+  {{ imageJpeg('suggestion__sourse', nameImg, 'suggestion__img', name) }}
+  <a href="{{ href }}" class="suggestion__content">
+    <div class="suggestion__category">{{ category }}</div>
+    <div class="suggestion__name">{{ name }}</div>
+    <div class="suggestion__price">{{ price }} ₽</div>
+  </a>
+</li>
+{% endmacro %}
+
+{% macro menuCatalog(class, tittle, icon) %}
+<li class="catalog__{{ class }}">{{ tittle }}
+  <div class="catalog__group-svg {{ icon }}">
+    {{ imageSvg('slider-link', 'icon-menu-link') }}
+  </div>
+</li>
+{% endmacro %}
+
+
+{% macro imageJpeg(classPicture, name, classImg, alt) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}">
+</picture>
+{% endmacro %}
+
+{% macro imagePng(classPicture, name, classImg, alt) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.png" alt="{{ alt }}" class="{{ classImg }}">
+</picture>
+{% endmacro %}
+
+{% macro imageSvg(name, class) %}
+<svg class="{{ class }}">
+  <use xlink:href='img/svg/sprite.svg#{{ name }}'></use>
+</svg>
+{% endmacro %}

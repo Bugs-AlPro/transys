@@ -1,0 +1,30 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+ }
+ *, *:hover {
+  transition: 0.4s;
+}
+a {
+  text-decoration: none;
+}
+.svg {
+  fill: currentColor;
+}
+.hidden-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+  font-size: 1em;
+  overflow: hidden;
+}
+ul, li, p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
