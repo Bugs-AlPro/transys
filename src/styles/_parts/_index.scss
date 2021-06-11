@@ -204,7 +204,7 @@ ul, li, p {
         z-index: 2;
         top: 0;
         left: 0;
-        min-width: 415px;
+        max-width: 415px;
         margin: 130px 0 0 93px;
       }
       &__title {
@@ -223,6 +223,12 @@ ul, li, p {
         color: #fff;
         margin-top: 30px;
         line-height: 17px;
+      }
+      &__description--one {
+        padding-right: 30px;
+      }
+      &__description--two {
+        padding-right: 90px;
       }
       &__link {
         width: 178px;
@@ -341,7 +347,7 @@ ul, li, p {
         z-index: 2;
         top: 0;
         left: 0;
-        min-width: 554px;
+        max-width: 554px;
         margin: 230px 0 0 350px;
       }
       &__title {
@@ -360,6 +366,12 @@ ul, li, p {
         color: #fff;
         margin-top: 30px;
         line-height: 25px;
+      }
+      &__description--one {
+        padding-right: 60px;
+      }
+      &__description--two {
+        padding-right: 140px;
       }
       &__link {
         width: 200px;

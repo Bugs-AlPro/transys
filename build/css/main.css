@@ -168,7 +168,7 @@ body {
       z-index: 2;
       top: 0;
       left: 0;
-      min-width: 415px;
+      max-width: 415px;
       margin: 130px 0 0 93px; }
     .header-b__title {
       color: #fff;
@@ -185,6 +185,10 @@ body {
       color: #fff;
       margin-top: 30px;
       line-height: 17px; }
+    .header-b__description--one {
+      padding-right: 30px; }
+    .header-b__description--two {
+      padding-right: 90px; }
     .header-b__link {
       width: 178px;
       display: inline-block;
@@ -277,7 +281,7 @@ body {
       z-index: 2;
       top: 0;
       left: 0;
-      min-width: 554px;
+      max-width: 554px;
       margin: 230px 0 0 350px; }
     .header-b__title {
       color: #fff;
@@ -294,6 +298,10 @@ body {
       color: #fff;
       margin-top: 30px;
       line-height: 25px; }
+    .header-b__description--one {
+      padding-right: 60px; }
+    .header-b__description--two {
+      padding-right: 140px; }
     .header-b__link {
       width: 200px;
       display: inline-block;
