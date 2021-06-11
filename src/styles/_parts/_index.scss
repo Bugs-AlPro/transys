@@ -53,6 +53,137 @@ ul, li, p {
     .menu {
       display: none;
     }
+    .header-b {
+      position: relative;
+      &__cover {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+      &__img {
+        width: 107%;
+      }
+      &__content {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        min-width: 415px;
+        margin: 130px 0 0 93px;
+      }
+      &__title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        padding-bottom: 8px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #0093FF;
+        margin-bottom: 35px;
+      }
+      &__description {
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        margin-top: 30px;
+        line-height: 17px;
+      }
+      &__link {
+        width: 178px;
+        display: inline-block;
+        text-align: center;
+        padding: 8px 0;
+        color: #fff;
+        background-color: #0093FF;
+        margin-top: 45px;
+      }
+      &__social {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 230px;
+        margin-right: 20px;
+      }
+      &__s-link {
+        display: block;
+        margin-bottom: 24px;
+        color: #454B52;
+        opacity: 0.7;
+      }
+      &__s-link svg {
+        padding: 2px;
+      }
+      &__next-link {
+        display: none;
+      }
+    }
+    .header-h {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px 15px 12px;
+      &__btn {
+        border: none;
+        display: block;
+        background-color: inherit;
+        color: #fff;       
+      }
+      &__btn svg {
+        padding: 2px;
+      }
+      &__logo {
+        margin-right: 30px;
+
+      }
+      &__logo svg {
+        width: 175px;
+        height: 20px;
+      }
+    }
+    .language {
+      display: flex;
+      justify-content: center;
+      margin-right: 50px;
+      &__link {
+        text-transform: uppercase;
+        color: #78A1B6;
+        padding: 5px;
+      }
+      &__link--current {
+        color: #fff;
+      }
+    }
+    .info-h {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-grow: 2;
+      max-width: 50%;
+      &__icon--phone {
+        display: none;
+      }
+      &__item {
+        display: inline-flex;
+        gap: 16px;
+        color: #fff;
+      }
+      &__link {
+        width: 150px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        display: inline-block;
+        text-align: center;
+        padding: 6px 0;
+        color: #fff;
+      }
+      &__text {
+        color: currentColor;
+      }
+    }
   }
   @include media-up(xl) {
     .info-m {
