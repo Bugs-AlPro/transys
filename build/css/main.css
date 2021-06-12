@@ -33,6 +33,101 @@ body {
   font-size: 12px;
   margin: 0; }
 
+@media (max-width: 469.98px) {
+  .menu {
+    display: none; }
+  .language {
+    display: none; }
+  .header-b {
+    position: relative; }
+    .header-b__cover {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      height: 480px; }
+    .header-b__img {
+      height: 480px;
+      left: -300px;
+      position: absolute; }
+    .header-b__content {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      max-width: 260px;
+      margin: 170px 0 0 25px; }
+    .header-b__title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #0093FF;
+      margin-bottom: 15px;
+      max-width: 230px; }
+    .header-b__description {
+      font-weight: 400;
+      font-size: 11px;
+      color: #fff;
+      margin-top: 14px;
+      line-height: 14px; }
+    .header-b__description--two {
+      padding-right: 20px; }
+    .header-b__description--three {
+      padding-right: 25px; }
+    .header-b__link {
+      width: 139px;
+      display: inline-block;
+      text-align: center;
+      padding: 10px 0;
+      color: #fff;
+      background-color: #0093FF;
+      margin-top: 30px;
+      font-size: 10px;
+      line-height: 11px; }
+    .header-b__s-link {
+      display: none; }
+    .header-b__next-link {
+      display: none; }
+  .header-h {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px 10px 10px; }
+    .header-h__btn {
+      border: none;
+      display: block;
+      background-color: inherit;
+      color: #fff;
+      margin-right: 15px; }
+    .header-h__btn svg {
+      width: 18px;
+      height: 18px; }
+    .header-h__logo {
+      margin-right: 10px;
+      flex-grow: 1; }
+    .header-h__logo svg {
+      width: 135px;
+      height: 15px; }
+  .info-h__item--location {
+    display: none; }
+  .info-h__item--time {
+    display: none; }
+  .info-h__link svg {
+    width: 19px;
+    height: 19px; }
+  .info-h__icon--phone {
+    color: #fff;
+    transform: scaleX(-1); }
+  .info-h__link--text {
+    display: none; } }
+
 @media (min-width: 470px) and (max-width: 767.98px) {
   .menu {
     display: none; }

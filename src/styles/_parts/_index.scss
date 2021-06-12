@@ -34,7 +34,124 @@ ul, li, p {
     margin: 0;
   }
   @include media-down(sm) {
-
+    .menu {
+      display: none;
+    }
+    .language {
+      display: none;
+    }
+    .header-b {
+      position: relative;
+      &__cover {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 480px;
+      }
+      &__img {
+        height: 480px;
+        left: -300px;
+        position: absolute;
+      }
+      &__content {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        max-width: 260px;
+        margin: 170px 0 0 25px;
+      }
+      &__title {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #0093FF;
+        margin-bottom: 15px;
+        max-width: 230px;
+      }
+      &__description {
+        font-weight: 400;
+        font-size: 11px;
+        color: #fff;
+        margin-top: 14px;
+        line-height: 14px;
+      }
+      &__description--two {
+        padding-right: 20px;
+      }
+      &__description--three {
+        padding-right: 25px;
+      }
+      &__link {
+        width: 139px;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+        color: #fff;
+        background-color: #0093FF;
+        margin-top: 30px;
+        font-size: 10px;
+        line-height: 11px;
+      }
+      &__s-link {
+        display: none;
+      }
+      &__next-link {
+        display: none;
+      }
+    }
+    .header-h {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 15px 10px 10px;
+      &__btn {
+        border: none;
+        display: block;
+        background-color: inherit;
+        color: #fff;    
+        margin-right: 15px;   
+      }
+      &__btn svg {
+        width: 18px;
+        height: 18px;
+      }
+      &__logo {
+        margin-right: 10px;
+        flex-grow: 1;
+      }
+      &__logo svg {
+        width: 135px;
+        height: 15px;
+      }
+    }
+    .info-h {
+      &__item--location {
+        display: none;
+      }
+      &__item--time {
+        display: none;
+      }
+      &__link svg {
+        width: 19px;
+        height: 19px;
+      }
+      &__icon--phone {
+        color: #fff;
+        transform: scaleX(-1);
+      }
+      &__link--text {
+        display: none;
+      }
+    }
   }
   @include media-only(sm) {
     .menu {
