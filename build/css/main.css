@@ -660,7 +660,7 @@ body {
       position: relative; }
     .advantage__title::before, .advantage__title::after {
       width: 14vw;
-      height: 0.5px;
+      height: 1px;
       background-color: #374148;
       position: absolute;
       content: "";
@@ -722,7 +722,7 @@ body {
       position: relative; }
     .advantage__title::before, .advantage__title::after {
       width: 20vw;
-      height: 0.6px;
+      height: 1px;
       background-color: #374148;
       position: absolute;
       content: "";
@@ -787,7 +787,7 @@ body {
       position: relative; }
     .advantage__title::before, .advantage__title::after {
       width: 21vw;
-      height: 0.6px;
+      height: 1px;
       background-color: #374148;
       position: absolute;
       content: "";
