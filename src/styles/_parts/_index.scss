@@ -43,6 +43,128 @@ ul, li, p {
     .language {
       display: none;
     }
+    .header-b {
+      position: relative;
+      &__cover {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 320px;
+      }
+      &__img {
+        width: 130%;
+        max-width: 840px;
+        min-height: 320px;
+        max-height: 350px;
+        left: -50px;
+        position: absolute;
+      }
+      &__content {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        max-width: 250px;
+        margin: 45px 0 0 25px;
+      }
+      &__title {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #0093FF;
+        margin-bottom: 15px;
+        max-width: 230px;
+      }
+      &__description {
+        font-weight: 400;
+        font-size: 11px;
+        color: #fff;
+        margin-top: 12px;
+        line-height: 14px;
+      }
+      &__description--three {
+        padding-right: 10px;
+      }
+      &__link {
+        width: 139px;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+        color: #fff;
+        background-color: #0093FF;
+        margin-top: 20px;
+        font-size: 10px;
+        line-height: 11px;
+      }
+      &__social {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 230px;
+        margin-right: 20px;
+      }
+      &__s-link {
+        display: none;
+      }
+
+      &__next-link {
+        display: none;
+      }
+    }
+    .header-h {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 15px 10px 10px;
+      &__btn {
+        border: none;
+        display: block;
+        background-color: inherit;
+        color: #fff;    
+        margin-right: 15px;   
+      }
+      &__btn svg {
+        width: 18px;
+        height: 18px;
+      }
+      &__logo {
+        margin-right: 10px;
+        flex-grow: 1;
+      }
+      &__logo svg {
+        width: 135px;
+        height: 15px;
+      }
+    }
+    .info-h {
+      &__item--location {
+        display: none;
+      }
+      &__item--time {
+        display: none;
+      }
+      &__icon--phone {
+        display: none;
+      }
+      &__link {
+        width: 115px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        display: inline-block;
+        text-align: center;
+        padding: 7px 0;
+        color: #fff;
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
   }
   @include media-only(md) {
     .menu {
