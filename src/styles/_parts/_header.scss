@@ -421,6 +421,9 @@ ul, li, p {
   .menu {
     display: none;
   }
+  .header {
+    margin: 0;
+  }
   .header-b {
     position: relative;
     &__cover {
