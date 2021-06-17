@@ -834,7 +834,252 @@ body {
       font-size: 14px;
       line-height: 17px;
       color: #3C464E;
-      padding-left: 34px; } }
+      padding-left: 34px; }
+  .types {
+    position: relative; }
+    .types__wrap {
+      margin: 50px 65px; }
+    .types__title {
+      margin: 0 auto;
+      text-transform: uppercase;
+      max-width: 675px;
+      text-align: center;
+      color: #374148;
+      font-size: 24px;
+      font-weight: 600;
+      position: relative;
+      line-height: 30px; }
+    .types__title::before, .types__title::after {
+      width: 15vw;
+      height: 1px;
+      background-color: #374148;
+      position: absolute;
+      content: "";
+      top: 50%; }
+    .types__title::before {
+      right: -12vw; }
+    .types__title::after {
+      left: -12vw; }
+    .types__list {
+      margin: 230px auto 100px auto;
+      width: 900px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(5, 1fr);
+      background-image: url(../img/line-dotted2.svg);
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .types__block {
+      position: relative; }
+    .types__item {
+      display: block;
+      height: 219px;
+      width: 100%;
+      text-align: center;
+      position: relative; }
+    .types__name {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #3C464E;
+      display: block;
+      margin-top: 20px;
+      position: relative; }
+    .types__item--avia {
+      grid-column-start: 1;
+      grid-column-end: 3; }
+    .types__item--multi {
+      grid-column-start: 1;
+      grid-column-end: 3; }
+    .types__item:nth-child(3) {
+      grid-column-start: 2;
+      grid-column-end: 3; }
+    .types__item:nth-child(4) {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    .types__item:nth-child(1) .types__name {
+      float: right;
+      margin-right: 27%; }
+    .types__item:nth-child(2) .types__name {
+      margin-left: 30%;
+      float: left; }
+    .types__item:nth-child(3) .types__name {
+      float: left;
+      margin-left: 36%; }
+    .types__item:nth-child(4) .types__name {
+      float: left;
+      margin-left: 39%; }
+    .types__item:nth-child(5) .types__name {
+      float: right;
+      margin-right: 32%; }
+    .types__item:nth-child(6) .types__name {
+      float: right;
+      margin-right: 36%; }
+    .types__item:nth-child(7) .types__name {
+      float: right;
+      margin-right: 42%; }
+    .types__item:nth-child(8) .types__name {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 86%;
+      float: right;
+      margin-right: 42%; }
+    .types__item:nth-child(8) .types__block {
+      height: 100%; }
+    .types__svg {
+      position: absolute; }
+    .types__svg--ref {
+      right: 10%;
+      width: 315px;
+      bottom: -2px; }
+    .types__svg--cont {
+      right: 17%;
+      width: 315px;
+      bottom: -2px; }
+    .types__svg--tent {
+      left: 10%;
+      width: 315px;
+      bottom: -2px; }
+    .types__svg--dif {
+      right: 12%;
+      width: 295px;
+      bottom: -2px; }
+    .types__svg--big {
+      right: 9%;
+      width: 326px;
+      bottom: -2px; }
+    .types__svg--zd {
+      right: 20%;
+      width: 295px;
+      bottom: -2px; }
+    .types__svg--avia {
+      right: 20%;
+      width: 481px;
+      bottom: -2px; }
+    .types__svg--multi {
+      width: 658px;
+      left: 9%;
+      bottom: 50px; }
+    .types__item:nth-child(1)::before {
+      top: 40%;
+      left: 15%;
+      width: 80px;
+      height: 17px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .types__item:nth-child(2)::before {
+      top: -70%;
+      right: 15%;
+      width: 127px;
+      height: 25px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .types__item:nth-child(3)::before {
+      top: 45%;
+      right: 7%;
+      width: 78px;
+      height: 15px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .types__item:nth-child(4)::before {
+      top: 65%;
+      right: -10%;
+      width: 78px;
+      height: 15px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .types__item:nth-child(5)::before {
+      position: absolute;
+      content: "";
+      width: 215px;
+      height: 25px;
+      background-image: url(../img/cloud-right.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 45%;
+      left: 1%; }
+    .types__item:nth-child(6)::before {
+      top: 67%;
+      right: 22%;
+      width: 80px;
+      height: 19px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .types__item:nth-child(7)::before {
+      top: -30%;
+      left: -1%; }
+    .types__item:nth-child(8)::before {
+      top: -30%;
+      right: 25%; }
+    .types__item:nth-child(1):after {
+      position: absolute;
+      content: "";
+      width: 215px;
+      height: 25px;
+      background-image: url(../img/cloud-left.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -85%;
+      left: 13%; }
+    .types__item:nth-child(2):after {
+      position: absolute;
+      content: "";
+      width: 215px;
+      height: 25px;
+      background-image: url(../img/cloud-right.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 25%;
+      left: -10%; }
+    .types__item:nth-child(3):after {
+      position: absolute;
+      content: "";
+      width: 215px;
+      height: 25px;
+      background-image: url(../img/cloud-left.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 34%;
+      left: 1%; }
+    .types__item:nth-child(7):after {
+      position: absolute;
+      content: "";
+      width: 215px;
+      height: 25px;
+      background-image: url(../img/cloud-right.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 80%;
+      right: 1%; }
+    .types__item:nth-child(8):after {
+      position: absolute;
+      content: "";
+      width: 585px;
+      height: 73px;
+      background-image: url(../img/cloud-down.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -67%;
+      left: 7%; } }
 
 @media (min-width: 1440px) {
   .advantage {
@@ -1071,8 +1316,8 @@ body {
       top: -30%;
       left: -1%; }
     .types__item:nth-child(8)::before {
-      top: -30%;
-      right: 25%; }
+      top: -145%;
+      right: 50%; }
     .types__item:nth-child(1):after {
       position: absolute;
       content: "";
@@ -1103,16 +1348,6 @@ body {
       background-size: contain;
       top: 34%;
       left: -18%; }
-    .types__item:nth-child(4):after {
-      position: absolute;
-      content: "";
-      width: 6vw;
-      height: 1.6vw;
-      background-image: url(../img/cloud-center.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      top: 150%;
-      right: 5%; }
     .types__item:nth-child(5):after {
       position: absolute;
       content: "";
@@ -1133,23 +1368,14 @@ body {
       background-size: contain;
       top: 45%;
       right: 20%; }
-    .types__item:nth-child(7):after {
-      position: absolute;
-      content: "";
-      width: 15.7vw;
-      height: 2vw;
-      background-image: url(../img/cloud-left.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      top: 75%;
-      left: 20%; }
     .types__item:nth-child(8):after {
       position: absolute;
       content: "";
-      width: 6vw;
-      height: 1.6vw;
-      background-image: url(../img/cloud-center.svg);
+      width: 40vw;
+      height: 20vw;
+      background-image: url(../img/cloud-down.svg);
       background-repeat: no-repeat;
       background-size: contain;
       top: -45%;
-      left: 38%; } }
+      left: 20%;
+      z-index: 2; } }
