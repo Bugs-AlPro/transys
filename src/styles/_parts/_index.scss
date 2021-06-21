@@ -154,43 +154,44 @@
   }
 }
 @include media-only(md) {
+  .conteiner {
+    margin: 0 auto;
+    width: 729px;
+  }
   .advantage {
     position: relative;
-    
+    padding-top: 70px;
     &__title {
       margin: 0;
       text-transform: uppercase;
-      height: 387px;
       text-align: center;
       color: #374148;
       font-size: 24px;
       font-weight: 600;
-      background-image: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
-      padding-top: 75px;
       position: relative;
+      z-index: 2;
     }
     &__title::before,
     &__title::after {
-      width: 20vw;
+      width: 150px;
       height: 1px;
       background-color: #374148;
       position: absolute;
       content: "";
-      top: 90px;
+      top: 50%;
     }
     &__title::before {
-      left: 20px;
+      left: 0;
     }
     &__title::after {
-      right: 20px;
+      right: 0;
     }
     &__wrap-img {
       width: 92%;
-      position: absolute;
-      top: 130px;
-      left: 0;
+      position: relative;
+      z-index: 2;
+      margin-top: 25px;
       text-align: center;
-      overflow: hidden;
     }
     &__img {
       width: 620px;
@@ -206,18 +207,47 @@
     top: -4px;
     z-index: 2;
   }
+  .advantage::after {
+    width: 100%;
+    height: 387px;
+    background-image: linear-gradient(180deg, #CFD4DB 43.05%, rgba(186, 193, 201, 0) 100%);
+    content: "";
+    position: absolute;
+    top: -4px;
+    z-index: 1;
+  }
   .advantage-l {
-    margin-top: 55px;
-    padding: 0 5px 0 25px;
+    margin-top: 35px;
+    margin-left: 10px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     gap: 18px;
     column-gap: 35px;
     &__item {
       width: 43%;
       display: flex; 
       align-items: center;
+    }
+    &__item:nth-child(1) {
+    order: 1; 
+    }
+    &__item:nth-child(2) {
+    order: 3; 
+    }
+    &__item:nth-child(3) {
+    order: 5; 
+    }
+    &__item:nth-child(4) {
+    order: 2; 
+    }
+    &__item:nth-child(5) {
+    order: 4; 
+    }
+    &__item:nth-child(6) {
+    order: 6; 
     }
     &__item svg {
       width: 41px;
@@ -229,6 +259,308 @@
       line-height: 17px;
       color: #3C464E;
       padding-left: 34px;
+    }
+  }
+  .types {
+    position: relative;
+    margin-top: 55px;
+    &__title {
+      margin: 0 auto;
+      text-transform: uppercase;
+      max-width: 464px;
+      text-align: center;
+      color: #374148;
+      font-size: 24px;
+      font-weight: 600;
+      position: relative;
+      line-height: 30px;
+    
+      // border: 1px solid red;
+    }
+    &__title span {
+      display: block;
+      margin-bottom: 4px;
+    }
+    &__title::before,
+    &__title::after {
+      width: 123px;
+      height: 1px;
+      background-color: #374148;
+      position: absolute;
+      content: "";
+      top: 80%;
+    }
+    &__title::before {
+      right: -130px;
+    }
+    &__title::after {
+      left: -130px;
+    }
+    &__list {
+      margin: 195px auto 100px auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(5, 1fr);
+      // border: 1px solid black;
+      background-image: url(../img/line-dotted-md.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__block {
+      position: relative;
+    }
+    &__item {
+      // border: 1px solid red;
+      display: block;
+      height: 224px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+    &__name {
+      // border: 1px solid green;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #3C464E;
+      display: block;
+      margin-top: 23px;
+      position: relative;
+    }
+    &__item--avia {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    &__item--multi {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    &__item:nth-child(3) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    &__item:nth-child(4) {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    &__item:nth-child(1) &__name {
+      float: right;
+      margin-right: 23%;
+    }
+    &__item:nth-child(2) &__name {
+      margin-left: 30%;
+      float: left;
+    }
+    &__item:nth-child(3) &__name {
+      float: left;
+      margin-left: 36%;
+    }
+    &__item:nth-child(4) &__name {
+      float: left;
+      margin-left: 37%;
+    }
+    &__item:nth-child(5) &__name {
+      float: right;
+      margin-right: 28%;
+    }
+    &__item:nth-child(6) &__name {
+      float: right;
+      margin-right: 29%;
+    }
+    &__item:nth-child(7) &__name {
+      float: right;
+      margin-right: 41%;
+    }
+    &__item:nth-child(8) &__name {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 67%;
+      float: right;
+      margin-right: 39%;
+    }
+    &__item:nth-child(8) &__block {
+      height: 100%;
+    }
+    &__svg {
+      // border: 1px solid red;
+      position: absolute;
+      // display: none;
+    }
+    &__svg--ref {
+      right: 10%;
+      width: 264px;
+      bottom: -4px;
+    }
+    &__svg--cont {
+      right: 17%;
+      width: 264px;
+      bottom: -4px;
+    }
+    &__svg--tent {
+      left: 10%;
+      width: 264px;
+      bottom: -2px;
+    }
+    &__svg--dif {
+      right: 12%;
+      width: 247px;
+      bottom: -2px;
+    }
+    &__svg--big {
+      right: 8%;
+      width: 273px;
+      bottom: -1px;
+    }
+    &__svg--zd {
+      right: 20%;
+      width: 247px;
+      bottom: -1px;
+    }
+    &__svg--avia {
+      right: 20%;
+      width: 402px;
+      bottom: 0px;
+    }
+    &__svg--multi {
+      width: 552px;
+      left: 10%;
+      bottom: 87px;
+    }
+    &__item:nth-child(1)::before {
+      top: 50%;
+      right: 17%;
+      width: 70px;
+      height: 15px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__item:nth-child(2)::before {
+      top: -60%;
+      right: 9%;
+      width: 107px;
+      height: 24px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__item:nth-child(3)::before {
+      top: 38%;
+      right: 7%;
+      width: 70px;
+      height: 15px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__item:nth-child(4)::before {
+      top: 50%;
+      right: -5%;
+      width: 70px;
+      height: 15px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__item:nth-child(5)::before {
+      position: absolute;
+      content: "";
+      width: 190px;
+      height: 24px;
+      background-image: url(../img/cloud-right.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 35%;
+      left: 37%;
+    }
+    &__item:nth-child(6)::before {
+      top: 61%;
+      right: 19%;
+      width: 70px;
+      height: 15px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__item:nth-child(1):after {
+      position: absolute;
+      content: "";
+      width: 190px;
+      height: 24px;
+      background-image: url(../img/cloud-left.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -62%;
+      left: 9%;
+    }
+    &__item:nth-child(2):after {
+      position: absolute;
+      content: "";
+      width: 190px;
+      height: 24px;
+      background-image: url(../img/cloud-right.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 38%;
+      left: -5%;
+    }
+    &__item:nth-child(4):after {
+      position: absolute;
+      content: "";
+      width: 190px;
+      height: 24px;
+      background-image: url(../img/cloud-left.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 29%;
+      left: 43%;
+    }
+    &__item:nth-child(5)::after {
+      top: 61%;
+      left: 15%;
+      width: 70px;
+      height: 15px;
+      position: absolute;
+      content: "";
+      background-image: url(../img/cloud-center.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &__item:nth-child(7):after {
+      position: absolute;
+      content: "";
+      width: 190px;
+      height: 24px;
+      background-image: url(../img/cloud-right.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 85%;
+      right: -1%;
+    }
+    &__item:nth-child(8):after {
+      position: absolute;
+      content: "";
+      width: 485px;
+      height: 65px;
+      background-image: url(../img/cloud-down.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -53%;
+      left: 7%;
     }
   }
 }
@@ -351,7 +683,7 @@
       grid-template-columns: 50% 50%;
       grid-template-rows: repeat(5, 1fr);
       // border: 1px solid black;
-      background-image: url(../img/line-dotted2.svg);
+      background-image: url(../img/line-dotted-lg.svg);
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -604,7 +936,6 @@
 @include media-up(xl) {
   .conteiner {
     margin: 0 auto;
-    
   }
   .advantage {
     position: relative;
@@ -715,7 +1046,7 @@
       grid-template-columns: 50% 50%;
       grid-template-rows: repeat(5, 1fr);
       // border: 1px solid black;
-      background-image: url(../img/line-dotted.svg);
+      background-image: url(../img/line-dotted-xl.svg);
       background-repeat: no-repeat;
       background-size: contain;
     }
