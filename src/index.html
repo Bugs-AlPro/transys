@@ -18,6 +18,18 @@
   <use xlink:href='img/svgcolor/sprite.svg#{{ name }}'></use>
 </svg>
 {% endmacro %}
+{% macro imageJpeg(classPicture, name, classImg, alt) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp 1x, img/{{ name }}@2x.webp 2x" type="image/webp">
+  <img src="img/{{ name }}.jpg" alt="{{ alt }}" class="{{ classImg }}">
+</picture>
+{% endmacro %}
+{% macro imagePng(classPicture, name, classImg, alt) %}
+<picture class="{{ classPicture }}">
+  <source srcset="img/{{ name }}.webp" type="image/webp">
+  <img src="img/{{ name }}.png" alt="{{ alt }}" class="{{ classImg }}">
+</picture>
+{% endmacro %}
 
 {% block content %}
 <header class="header">
@@ -120,11 +132,7 @@
   </div>
   <div class="header__body header-b">
     <div class="header-b__cover">
-      <picture>
-        <source type="image/webp" srcset="img/header-foto.webp 1x, img/header-foto@2x.webp 2x">
-        <img src="img/header-foto.jpg" alt="Грузоперевозка" class="header-b__img"
-          srcset="img/header-foto.webp 1x, img/header-foto@2x.webp 2x">
-      </picture>
+      {{ imageJpeg('header-b__picture', 'header-foto', 'header-b__img', 'Грузоперевозка') }}
     </div>
     <div class="header-b__content">
       <h1 class="header-b__title">Международные<br>грузоперевозки</h1>
@@ -158,7 +166,7 @@
     <div class="conteiner">
       <h2 class="advantage__title">Наши преимущества</h2>
       <div class="advantage__wrap-img">
-        <img src="img/track.png" alt="Грузовой автомобиль" class="advantage__img">
+        {{ imagePng('advantage__picture', 'track', 'advantage__img', 'Грузовой автомобиль') }}
       </div>
       <ul class="advantage__list advantage-l">
         <li class="advantage-l__item">
@@ -242,6 +250,59 @@
           </div>
         </li>
       </ul>
+    </div>
+  </section>
+  <section class="quality">
+    <div class="conteiner">
+      <div class="quality__head quality-h">
+        <div class="quality-h__photo">
+          {{ imagePng('quality-h__picture', 'director', 'quality-h__img', 'Фотография Крат Григория Михайловича') }}
+        </div>
+        <h2 class="quality-h__title">
+          <span>Мы</span>
+          <span>за долгосрочные</span>
+          <span>деловые отношения!</span>
+        </h2>
+        <div class="quality-h__author">
+          <span>Крат</span>
+          <span>Григорий Михайлович</span>
+        </div>
+        <div class="quality-h__contact">
+          <span>Директор ООО "Трансис"</span>
+          <span>+375 29 208 91 91</span>
+        </div>
+      </div>
+      <ol class="quality__list quality-l">
+        <li class="quality-l__item">
+          <h3 class="quality-l__title">Экономия и деловой подход</h3>
+          <p class="quality-l__description">1-ю перевозку выполняем по себестоимости..</p>
+          <p class="quality-l__description">Вы оцениваете качество нашей работы.
+            Вносите правки, если это необходимо.</p>
+        </li>
+        <li class="quality-l__item">
+          <h3 class="quality-l__title">Компетентность</h3>
+          <p class="quality-l__description">Исключаем увеличение ставки и непредвиденные расходы в процессе перевозки за
+            счет детальной проработки маршрута. </p>
+        </li>
+        <li class="quality-l__item">
+          <h3 class="quality-l__title">Ответственность</h3>
+          <p class="quality-l__description">Несогласованные расходы на этапе заключения договора ложатся на нас.</p>
+        </li>
+        <li class="quality-l__item">
+          <h3 class="quality-l__title">Надежность</h3>
+          <p class="quality-l__description">Согласовываем ставку исходя из Ваших условий, фиксируем стоимость в
+            договоре.</p>
+        </li>
+        <li class="quality-l__item">
+          <h3 class="quality-l__title">Лояльность</h3>
+          <p class="quality-l__description">В случае нарушения договоренностей (опоздания, простои, срывы и т.д.)
+            обсуждаем штрафные санкции и меняем условия договора в пользу заказчика на любом этапе перевозки.
+          </p>
+        </li>
+      </ol>
+      <div class="quality__btn quality-b">
+        <a href="#" class="quality-b__link">Оцените качество наших услуг</a>
+      </div>
     </div>
   </section>
 </main>
