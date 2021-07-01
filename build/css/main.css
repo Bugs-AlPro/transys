@@ -1717,7 +1717,156 @@ body {
       background-repeat: no-repeat;
       background-size: contain;
       top: -70%;
-      left: 7%; } }
+      left: 7%; }
+  .quality {
+    background-image: linear-gradient(171deg, white, white 25%, #0A6397 25%, #0A6397 100%);
+    padding-bottom: 50px;
+    overflow: hidden; }
+    .quality .q-head {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto 90px auto;
+      padding-left: 150px; }
+      .quality .q-head__title {
+        margin: 20px 0 30px 0;
+        font-size: 36px;
+        color: #0A6397;
+        font-weight: 600;
+        line-height: 38px; }
+      .quality .q-head__contact span,
+      .quality .q-head__author span,
+      .quality .q-head__title span {
+        display: block; }
+      .quality .q-head__author {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px; }
+      .quality .q-head__contact {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px; }
+      .quality .q-head__img {
+        position: absolute;
+        top: -60px;
+        left: -105px;
+        width: 259px; }
+    .quality .q-list {
+      margin: 0 auto;
+      display: grid;
+      gap: 25px;
+      color: white;
+      width: 871px; }
+      .quality .q-list__item {
+        padding-left: 140px;
+        min-height: 142px;
+        position: relative;
+        max-width: 50%;
+        display: grid;
+        align-content: center; }
+      .quality .q-list__item:nth-child(1) {
+        justify-self: end; }
+      .quality .q-list__item:nth-child(2) {
+        justify-self: start; }
+      .quality .q-list__item:nth-child(3) {
+        justify-self: end; }
+      .quality .q-list__item:nth-child(4) {
+        justify-self: start; }
+      .quality .q-list__item:nth-child(5) {
+        justify-self: end; }
+      .quality .q-list__item::before {
+        position: absolute;
+        height: 140px;
+        width: 134px;
+        top: -30px;
+        left: 0;
+        font-size: 170px;
+        font-weight: 300;
+        color: transparent;
+        text-align: center;
+        text-shadow: 0 0 0 #0A6397, 1px -1px 0 white, 1px 2px 0 white, -1px 1px 0 white, -1px -1px 0 white; }
+      .quality .q-list__item:nth-child(1)::before {
+        content: '1'; }
+      .quality .q-list__item:nth-child(2)::before {
+        content: '2'; }
+      .quality .q-list__item:nth-child(3)::before {
+        content: '3'; }
+      .quality .q-list__item:nth-child(4)::before {
+        content: '4'; }
+      .quality .q-list__item:nth-child(5)::before {
+        content: '5'; }
+      .quality .q-list__item:nth-child(1)::after {
+        position: absolute;
+        content: "";
+        width: 158px;
+        height: 33px;
+        background-image: url(../img/cloud-center-blue.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 73%;
+        left: -40%; }
+      .quality .q-list__item:nth-child(2)::after {
+        position: absolute;
+        content: "";
+        width: 247px;
+        height: 75px;
+        background-image: url(../img/airplane.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 8%;
+        right: -70%; }
+      .quality .q-list__item:nth-child(3)::after {
+        position: absolute;
+        content: "";
+        width: 135px;
+        height: 28px;
+        background-image: url(../img/cloud-center-blue.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 70%;
+        left: -48%; }
+      .quality .q-list__item:nth-child(4)::after {
+        position: absolute;
+        content: "";
+        width: 220px;
+        height: 28px;
+        background-image: url(../img/cloud-left-blue.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 83%;
+        right: -100%; }
+      .quality .q-list__item:nth-child(5)::after {
+        position: absolute;
+        content: "";
+        width: 550px;
+        height: 175px;
+        background-image: url(../img/ship-lg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 40%;
+        left: -115%; }
+      .quality .q-list__title {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        line-height: 23px;
+        margin-bottom: 20px;
+        position: relative; }
+      .quality .q-list__description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px; }
+    .quality .q-btn {
+      margin: 90px auto 0 auto;
+      text-align: center; }
+      .quality .q-btn__link {
+        display: inline-block;
+        background-color: #0093FF;
+        color: white;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 7px 15px; } }
 
 @media (min-width: 1500px) {
   .up-sm {
