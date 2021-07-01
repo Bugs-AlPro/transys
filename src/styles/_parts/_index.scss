@@ -1816,4 +1816,191 @@
       z-index: 2;
     }
   }
+  .quality {
+    background-image: linear-gradient(171deg, white, white 30%, #0A6397 30%, #0A6397 100%);
+    padding: 100px 0;
+    overflow: hidden;
+    .q-head {
+      // border: 1px solid red;
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto 130px auto;
+      padding-left: 90px;
+      &__title {
+        margin: 20px 0 30px 0;
+        font-size: 50px;
+        color: #0A6397;
+        font-weight: 600;
+        line-height: 53px;
+      }
+      &__contact span,
+      &__author span,
+      &__title span {
+        display: block;
+      }
+      &__author {
+        // margin-top: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      &__contact {
+        margin-top: 25px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      &__img {
+        position: absolute;
+        top: -60px;
+        left: -270px;
+      }
+    }
+    .q-list {
+      margin: 0 auto;
+      display: grid;
+      gap: 5px;
+      // justify-content: center;
+      // border: 1px solid red;
+      color: white;
+      width: 1190px;
+      &__item {
+        padding-left: 186px;
+        min-height: 185px;
+        position: relative;
+        width: 600px;
+        display: grid;
+        align-content: center;
+      }
+      &__item:nth-child(1) {
+        justify-self: end;
+      }
+      &__item:nth-child(2) {
+        justify-self: start;
+        width: 510px;
+        
+      }
+      &__item:nth-child(3) {
+        justify-self: end;
+      }
+      &__item:nth-child(4) {
+        justify-self: start;
+        width: 490px;
+      }
+      &__item:nth-child(5) {
+        justify-self: end;
+      }
+      &__item::before {
+        position: absolute;
+        height: 195px;
+        width: 186px;
+        top: -20px;
+        left: 0;
+        font-size: 180px;
+        font-weight: 300;
+        color: transparent;
+        text-align: center;
+        text-shadow: 0 0 0 #0A6397, 1px -1px 0 white, 1px 2px 0 white, -1px 1px 0 white, -1px -1px 0 white; 
+        // -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-color: white;
+      }
+      &__item:nth-child(1)::before {
+        content: '1';
+      }
+      &__item:nth-child(2)::before {
+        content: '2';
+      }
+      &__item:nth-child(3)::before {
+        content: '3';
+      }
+      &__item:nth-child(4)::before {
+        content: '4';
+      }
+      &__item:nth-child(5)::before {
+        content: '5';
+      }
+      &__item:nth-child(1)::after {
+        position: absolute;
+        content: "";
+        width: 215px;
+        height: 45px;
+        background-image: url(../img/cloud-center-blue.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 80%;
+        right: -50%;
+      }
+      &__item:nth-child(2)::after {
+        position: absolute;
+        content: "";
+        width: 335px;
+        height: 100px;
+        background-image: url(../img/airplane.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 10%;
+        right: -90%;
+      }
+      &__item:nth-child(3)::after {
+        position: absolute;
+        content: "";
+        width: 185px;
+        height: 38px;
+        background-image: url(../img/cloud-center-blue.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 50%;
+        right: -30%;
+      }
+      &__item:nth-child(4)::after {
+        position: absolute;
+        content: "";
+        width: 303px;
+        height: 40px;
+        background-image: url(../img/cloud-left-blue.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 10%;
+        left: -60%;
+      }
+      &__item:nth-child(5)::after {
+        position: absolute;
+        content: "";
+        width: 752px;
+        height: 312px;
+        background-image: url(../img/ship.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: -90%;
+        left: 35%;
+      }
+      &__title {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        line-height: 25px;
+        margin-bottom: 20px;
+        position: relative;
+      }
+      &__description {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+  
+      }
+    }
+    .q-btn {
+     margin: 100px auto 0 auto;
+     text-align: center;
+     &__link {
+       display: inline-block;
+       background-color: #0093FF;
+       color: white;
+       font-size: 14px;
+       line-height: 17px;
+       padding: 12px 35px;
+     }   
+    }
+  }
 }
