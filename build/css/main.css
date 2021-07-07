@@ -581,7 +581,7 @@ body {
       color: currentColor; } }
 
 @media (max-width: 469.98px) {
-  .down-sm, .q-svg {
+  .down-sm {
     display: none; }
   .body {
     min-width: 300px; }
@@ -761,10 +761,11 @@ body {
       left: -6vw; }
   .quality {
     margin-top: 30px;
-    background-image: linear-gradient(171deg, white, white 19%, #0A6397 19%, #0A6397 100%);
+    background-image: linear-gradient(171deg, white, white 19%, #0A6397 19.1%, #0A6397 100%);
     padding: 0 20px 50px 20px;
     overflow: hidden;
-    min-width: 300px; }
+    min-width: 300px;
+    position: relative; }
     .quality .q-head {
       position: relative;
       margin: 0 auto 150px auto; }
@@ -794,16 +795,6 @@ body {
         bottom: -145px;
         left: 60%;
         width: 137px; }
-    .quality .q-list::before {
-      position: absolute;
-      content: "";
-      width: 73px;
-      height: 17px;
-      background-image: url(../img/cloud-wing-blue.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      top: -45px;
-      left: -20px; }
     .quality .q-list {
       position: relative;
       margin: 0 auto;
@@ -826,8 +817,7 @@ body {
         color: transparent;
         text-align: center;
         vertical-align: middle;
-        -webkit-text-stroke-width: 0.2px;
-        -webkit-text-stroke-color: white; }
+        text-shadow: 0 0 0 #0A6397, 1px -1px 0 rgba(255, 255, 255, 0.5), 1px 1px 0 rgba(255, 255, 255, 0.5), -1px 1px 0 rgba(255, 255, 255, 0.5), -1px -1px 0 rgba(255, 255, 255, 0.5); }
       .quality .q-list__item:nth-child(1)::before {
         content: '1'; }
       .quality .q-list__item:nth-child(2)::before {
@@ -838,27 +828,6 @@ body {
         content: '4'; }
       .quality .q-list__item:nth-child(5)::before {
         content: '5'; }
-      .quality .q-list__item:nth-child(1)::after {
-        position: absolute;
-        content: "";
-        width: 175px;
-        height: 23px;
-        background-image: url(../img/cloud-left-blue.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        top: -75%;
-        right: 30%;
-        transform: scaleX(-1); }
-      .quality .q-list__item:nth-child(2)::after {
-        position: absolute;
-        content: "";
-        width: 113px;
-        height: 25px;
-        background-image: url(../img/cloud-center-blue.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        top: -25%;
-        right: 0; }
       .quality .q-list__title span {
         display: block; }
       .quality .q-list__title {
@@ -884,7 +853,32 @@ body {
         font-size: 14px;
         line-height: 17px;
         padding: 7px 20px;
-        box-shadow: 0px 0px 20px rgba(0, 60, 95, 0.5); } }
+        box-shadow: 0px 0px 20px rgba(0, 60, 95, 0.5); }
+    .quality .q-svg__item {
+      position: absolute;
+      fill: #0A6397;
+      stroke: #074F79; }
+    .quality .q-svg__cloud-wing-2 {
+      stroke-width: 4px;
+      top: 24.5%;
+      left: 0%;
+      width: 73px;
+      height: 18px; }
+    .quality .q-svg__cloud-left-1 {
+      stroke-width: 4px;
+      top: 20.5%;
+      left: 14%;
+      width: 175px;
+      height: 23px;
+      transform: scaleX(-1); }
+    .quality .q-svg__cloud-center-big-1 {
+      stroke-width: 4px;
+      top: 38%;
+      right: 6%;
+      width: 113px;
+      height: 27px; }
+    .quality .q-svg__cloud-wing, .quality .q-svg__cloud-center-5, .quality .q-svg__cloud-center-big-2, .quality .q-svg__cloud-left-2, .quality .q-svg__cloud-center-big-3, .quality .q-svg__cloud-ship-lg, .quality .q-svg__cloud-airplane, .quality .q-svg__cloud-left-3, .quality .q-svg__cloud-center-4, .quality .q-svg__cloud-center-6, .quality .q-svg__cloud-left-4, .quality .q-svg__cloud-ship {
+      display: none; } }
 
 @media (min-width: 470px) and (max-width: 767.98px) {
   .up-sm {
