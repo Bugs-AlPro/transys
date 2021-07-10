@@ -8,6 +8,19 @@
 {href: "#", svgname: "instagramm"}
 ]%}
 
+{% set gPreview = [
+{name: "guarantee-prew-1", alt: "Грузовые перевозки 1"},
+{name: "guarantee-prew-2", alt: "Грузовые перевозки 2"},
+{name: "guarantee-prew-3", alt: "Грузовые перевозки 3"},
+{name: "guarantee-prew-4", alt: "Грузовые перевозки 4"},
+{name: "guarantee-prew-5", alt: "Грузовые перевозки 5"},
+{name: "guarantee-prew-6", alt: "Грузовые перевозки 6"},
+{name: "guarantee-prew-7", alt: "Грузовые перевозки 7"},
+{name: "guarantee-prew-8", alt: "Грузовые перевозки 8"},
+{name: "guarantee-prew-9", alt: "Грузовые перевозки 9"},
+{name: "guarantee-prew-10", alt: "Грузовые перевозки 10"}
+]%}
+
 {% macro imageSvg(name, class, width, height) %}
 <svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
   <use xlink:href='img/svg/sprite.svg#{{ name }}'></use>
@@ -320,6 +333,73 @@
         {{ imageSvgColor('cloud-ship', 'svgcolor q-svg__item q-svg__cloud-ship', '752px', '312px') }}
         {{ imageSvgColor('cloud-ship-lg', 'svgcolor q-svg__item q-svg__cloud-ship-lg', '544px', '171px') }}
       </div>
+    </div>
+  </section>
+  <section class="guarantee">
+    <ul class="guarantee__preview g-preview">
+
+      {% for item in gPreview %}
+      <li class="g-preview__item">
+        <picture class="g-preview__picture">
+          <source srcset="img/{{ item.name }}.webp" type="image/webp">
+          <img src="img/{{ item.name }}.jpg" alt="{{ item.alt }}" class="g-preview__img">
+        </picture>
+      </li>
+      {% endfor %}
+
+    </ul>
+    <div class="conteiner">
+      <h2 class="guarantee__title">Мы гарантируем</h2>
+      <ul class="guarantee__list">
+        <li class="guarantee__item">
+          <div class="g-control">
+            <button class="g-control__btn  g-control__btn--active"></button>
+            <span class="g-control__title">Скорость</span>
+            {{ imageSvgColor('speed', 'svgcolor g-control__svg', '53px', '53px') }}
+          </div>
+          <div class="g-slide">
+            <div class="g-slide__slide">
+              <ul class="g-slide__list">
+                <li class="g-slide__item">Подача транспорта в день обращения</li>
+                <li class="g-slide__item">Собственный автопарк</li>
+                <li class="g-slide__item">Экапиж 2 водителя</li>
+              </ul>
+              <picture class="g-slide__picture">
+                <source srcset="img/guarantee-slide-1.webp" type="image/webp">
+                <img src="img/guarantee-slide-1.jpg" alt="Перевозка груза" class="g-slide__img">
+              </picture>
+            </div>
+          </div>
+        </li>
+        <li class="guarantee__item">
+          <div class="g-control">
+            <button class="g-control__btn"></button>
+            <span class="g-control__title">Комфорт</span>
+            {{ imageSvgColor('comfort', 'svgcolor g-control__svg', '53px', '53px') }}
+          </div>
+        </li>
+        <li class="guarantee__item">
+          <div class="g-control">
+            <button class="g-control__btn"></button>
+            <span class="g-control__title">Надежность</span>
+            {{ imageSvgColor('reliability', 'svgcolor g-control__svg', '53px', '53px') }}
+          </div>
+        </li>
+        <li class="guarantee__item">
+          <div class="g-control">
+            <button class="g-control__btn"></button>
+            <span class="g-control__title">Безопасность</span>
+            {{ imageSvgColor('safety', 'svgcolor g-control__svg', '53px', '53px') }}
+          </div>
+        </li>
+        <li class="guarantee__item">
+          <div class="g-control">
+            <button class="g-control__btn"></button>
+            <span class="g-control__title">Экономия</span>
+            {{ imageSvgColor('economy', 'svgcolor g-control__svg', '53px', '53px') }}
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 </main>
