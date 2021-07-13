@@ -302,14 +302,16 @@ body {
       width: 18px;
       height: 18px; }
     .header-h__logo {
-      margin-right: 10px; }
+      margin-right: 10px;
+      flex-grow: 1; }
     .header-h__logo svg {
       width: 135px;
       height: 15px; }
   .language {
     display: flex;
     justify-content: center;
-    margin-right: 10px; }
+    margin-right: 10px;
+    flex-grow: 2; }
     .language__link {
       text-transform: uppercase;
       color: #78A1B6;
@@ -420,14 +422,16 @@ body {
     .header-h__btn svg {
       padding: 2px; }
     .header-h__logo {
-      margin-right: 30px; }
+      margin-right: 30px;
+      flex-grow: 1; }
     .header-h__logo svg {
       width: 175px;
       height: 20px; }
   .language {
     display: flex;
     justify-content: center;
-    margin-right: 50px; }
+    margin-right: 50px;
+    flex-grow: 2; }
     .language__link {
       text-transform: uppercase;
       color: #78A1B6;
