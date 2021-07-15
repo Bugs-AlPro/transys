@@ -1475,7 +1475,7 @@ body {
     .guarantee__title::after {
       left: 0px; }
     .guarantee__list {
-      min-height: 728px;
+      min-height: 570px;
       margin: 35px auto 0 auto;
       display: flex;
       justify-content: space-around;
@@ -1486,7 +1486,7 @@ body {
       border-bottom: 1px solid #70787C;
       position: absolute;
       content: "";
-      top: 8.5%;
+      top: 10.5%;
       right: 0; }
   .g-preview {
     display: flex; }
@@ -1522,7 +1522,7 @@ body {
       stroke: #0A6397; }
   .g-slide {
     position: absolute;
-    top: 16%;
+    top: 20%;
     right: 0;
     width: 100%; }
     .g-slide__slide {
@@ -1567,7 +1567,61 @@ body {
       box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.4);
       min-width: 440px;
       width: 90vw;
-      max-width: 727px; } }
+      max-width: 727px; }
+  .team {
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+    background-image: url(../img/team-bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; }
+    .team__title {
+      margin: 0 auto 40px auto;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      position: relative;
+      line-height: 30px; }
+    .team__title::before, .team__title::after {
+      width: 75px;
+      height: 1px;
+      border-bottom: 1px solid #c4c4c4;
+      position: absolute;
+      content: "";
+      top: 50%; }
+    .team__title::before {
+      right: 0px; }
+    .team__title::after {
+      left: 0px; }
+    .team__collage {
+      display: grid;
+      grid-template-columns: repeat(6, 80px);
+      grid-template-rows: 80px 80px;
+      background-color: #0A6397;
+      justify-content: center; }
+    .team__img {
+      height: 100%;
+      width: 80px; }
+    .team__text {
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+      margin: 40px auto 60px auto;
+      max-width: 440px; }
+    .team__p {
+      margin-top: 20px; }
+    .team__bottom {
+      text-align: center; }
+    .team__link {
+      display: inline-block;
+      background-color: #0093FF;
+      color: white;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 8px 25px;
+      box-shadow: 0px 0px 20px rgba(0, 60, 95, 0.5); } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .up-sm {
