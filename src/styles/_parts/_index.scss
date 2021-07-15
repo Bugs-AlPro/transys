@@ -579,6 +579,80 @@
       display: none;
     }
   }
+  .team {
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+    background-image: url(../img/team-bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    &__title {
+      margin: 0 auto 40px auto;
+      text-transform: uppercase;
+      // max-width: 730px;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      position: relative;
+      line-height: 30px;
+    }
+    &__title::before,
+    &__title::after {
+      width: 20px;
+      height: 1px;
+      border-bottom: 1px solid #c4c4c4;
+      // background-color: #374148;
+      position: absolute;
+      content: "";
+      top: 50%;
+    }
+    &__title::before {
+      right: 0px;
+    }
+    &__title::after {
+      left: 0px;
+    }
+    &__collage {
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      grid-template-rows: repeat(3, 80px);
+      background-color: hsla(202, 88%, 32%, 0.5);
+      justify-content: center;
+    }
+    &__img {  
+      height: 100%;
+      max-width: 80px;
+      // width: 10vw;
+      // margin: 0;
+      // padding: 0;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+      margin: 40px auto 45px auto;
+      // max-width: 440px;
+      padding: 0 20px;
+    }
+    &__p {
+      margin-top: 20px;
+    }
+    &__bottom {
+      text-align: center;
+    }
+    &__link {
+      display: inline-block;
+      background-color: #0093FF;
+      color: white;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 8px 25px;
+      box-shadow: 0px 0px 20px rgba(0, 60, 95, 0.5);
+    }   
+  }
 }
 @include media-only(sm) {
   .up-sm {
@@ -1402,7 +1476,7 @@
       display: grid;
       grid-template-columns: repeat(6, 80px);
       grid-template-rows: 80px 80px;
-      background-color: #0A6397;
+      background-color: hsla(202, 88%, 32%, 0.5);
       justify-content: center;
     }
     &__img {  
@@ -2225,6 +2299,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    overflow: hidden;
     &__title {
       margin: 0 auto 45px auto;
       text-transform: uppercase;

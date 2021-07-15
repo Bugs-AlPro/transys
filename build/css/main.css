@@ -1000,7 +1000,62 @@ body {
     .g-slide__item:nth-child(3):before {
       content: "3"; }
     .g-slide__img {
-      display: none; } }
+      display: none; }
+  .team {
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+    background-image: url(../img/team-bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden; }
+    .team__title {
+      margin: 0 auto 40px auto;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      position: relative;
+      line-height: 30px; }
+    .team__title::before, .team__title::after {
+      width: 20px;
+      height: 1px;
+      border-bottom: 1px solid #c4c4c4;
+      position: absolute;
+      content: "";
+      top: 50%; }
+    .team__title::before {
+      right: 0px; }
+    .team__title::after {
+      left: 0px; }
+    .team__collage {
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      grid-template-rows: repeat(3, 80px);
+      background-color: rgba(10, 101, 153, 0.5);
+      justify-content: center; }
+    .team__img {
+      height: 100%;
+      max-width: 80px; }
+    .team__text {
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+      margin: 40px auto 45px auto;
+      padding: 0 20px; }
+    .team__p {
+      margin-top: 20px; }
+    .team__bottom {
+      text-align: center; }
+    .team__link {
+      display: inline-block;
+      background-color: #0093FF;
+      color: white;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 8px 25px;
+      box-shadow: 0px 0px 20px rgba(0, 60, 95, 0.5); } }
 
 @media (min-width: 470px) and (max-width: 767.98px) {
   .up-sm {
@@ -1599,7 +1654,7 @@ body {
       display: grid;
       grid-template-columns: repeat(6, 80px);
       grid-template-rows: 80px 80px;
-      background-color: #0A6397;
+      background-color: rgba(10, 101, 153, 0.5);
       justify-content: center; }
     .team__img {
       height: 100%;
@@ -2256,7 +2311,8 @@ body {
     background-image: url(../img/team-bc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
     .team__title {
       margin: 0 auto 45px auto;
       text-transform: uppercase;
