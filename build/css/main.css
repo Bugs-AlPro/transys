@@ -2697,7 +2697,7 @@ body {
     .guarantee__title::after {
       left: 0px; }
     .guarantee__list {
-      min-height: 730px;
+      min-height: 550px;
       margin: 40px auto 0 auto;
       display: flex;
       justify-content: space-between;
@@ -2708,7 +2708,7 @@ body {
       border-bottom: 1px solid #70787C;
       position: absolute;
       content: "";
-      top: 8.5%;
+      top: 10.8%;
       right: -2%; }
   .g-preview {
     display: flex; }
@@ -2744,24 +2744,34 @@ body {
       stroke: #0A6397; }
   .g-slide {
     position: absolute;
-    top: 20%;
+    top: 24%;
     right: -2%;
     width: 104%; }
     .g-slide__slide {
       display: flex;
-      justify-content: center;
-      gap: 40px; }
+      justify-content: space-around;
+      gap: 30px; }
     .g-slide__list {
-      margin-top: 20px; }
+      margin-top: 20px;
+      padding-left: 0;
+      display: grid;
+      align-content: center;
+      gap: 40px; }
     .g-slide__item {
       font-size: 14px;
       min-height: 50px;
-      margin-top: 40px;
       padding-left: 70px;
       position: relative;
-      display: flex;
+      margin: auto 0;
+      display: inline-flex;
+      gap: 5px;
+      align-items: center; }
+    .g-slide__item:nth-child(1) {
       flex-direction: column;
+      align-items: flex-start;
       justify-content: center; }
+    .g-slide__item:nth-child(1) span {
+      display: block; }
     .g-slide__item::before {
       position: absolute;
       width: 50px;
@@ -2781,7 +2791,59 @@ body {
       content: "3"; }
     .g-slide__img {
       box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.4);
-      width: 593px; } }
+      width: 593px; }
+  .team {
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+    background-image: url(../img/team-bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .team__title {
+      margin: 0 auto 45px auto;
+      text-transform: uppercase;
+      max-width: 805px;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      position: relative;
+      line-height: 30px; }
+    .team__title::before, .team__title::after {
+      width: 230px;
+      height: 1px;
+      border-bottom: 1px solid #c4c4c4;
+      position: absolute;
+      content: "";
+      top: 50%; }
+    .team__title::before {
+      right: 0px; }
+    .team__title::after {
+      left: 0px; }
+    .team__collage {
+      display: flex;
+      justify-content: center;
+      background-color: #0A6397; }
+    .team__img {
+      height: 100%;
+      width: 72px; }
+    .team__text {
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+      margin: 45px auto 60px auto;
+      max-width: 570px; }
+    .team__p {
+      margin-top: 20px; }
+    .team__bottom {
+      text-align: center; }
+    .team__link {
+      display: inline-block;
+      background-color: #0093FF;
+      color: white;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 10px 30px;
+      box-shadow: 0px 0px 20px rgba(0, 60, 95, 0.5); } }
 
 @media (min-width: 1800px) {
   .up-sm {
@@ -3322,13 +3384,15 @@ body {
   .g-slide {
     position: absolute;
     top: 22%;
-    right: 3%; }
+    right: 3%;
+    width: 100%; }
     .g-slide__slide {
       display: flex;
-      justify-content: center;
-      gap: 50px; }
+      justify-content: flex-end;
+      gap: 70px; }
     .g-slide__list {
-      margin-top: 30px; }
+      margin-top: 30px;
+      padding-left: 0; }
     .g-slide__item {
       font-size: 18px;
       min-height: 64px;
@@ -3339,6 +3403,11 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center; }
+    .g-slide__item:nth-child(3) {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 5px;
+      align-items: center; }
     .g-slide__item::before {
       position: absolute;
       width: 64px;
@@ -3359,9 +3428,11 @@ body {
     .g-slide__img {
       box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.4); }
   .team {
-    background-image: url(../img/team-bc.jpg);
     margin: 0 auto;
-    padding: 80px 0 100px 0; }
+    padding: 80px 0 100px 0;
+    background-image: url(../img/team-bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
     .team__title {
       margin: 0 auto 80px auto;
       text-transform: uppercase;

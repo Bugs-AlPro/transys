@@ -2762,7 +2762,7 @@
     }
     &__list {
       // width: 1300px;
-      min-height: 730px;
+      min-height: 550px;
       margin: 40px auto 0 auto;
       display: flex;
       justify-content: space-between;
@@ -2774,7 +2774,7 @@
       border-bottom: 1px solid #70787C;
       position: absolute;
       content: "";
-      top: 8.5%;
+      top: 10.8%;
       right: -2%;
     }
   }
@@ -2821,27 +2821,40 @@
   }
   .g-slide {
     position: absolute;
-    top: 20%;
+    top: 24%;
     right: -2%;
     // left: 0;
     width: 104%;
     &__slide {
       display: flex;
-      justify-content: center;
-      gap: 40px;
+      justify-content: space-around;
+      gap: 30px;
     }
     &__list {
       margin-top: 20px;
+      padding-left: 0;
+      display: grid;
+      align-content: center;
+      gap: 40px;
     }
     &__item {
       font-size: 14px;
       min-height: 50px;
-      margin-top: 40px;
-      padding-left: 70px;
+      // margin-top: 40px;
+      padding-left: 70px; 
       position: relative;
-      display: flex;
-      flex-direction: column;  
+      margin: auto 0;
+      display: inline-flex;
+      gap: 5px;
+      align-items: center;
+    }
+    &__item:nth-child(1) {
+      flex-direction: column;
+      align-items: flex-start;
       justify-content: center;
+    }
+    &__item:nth-child(1) span {
+      display: block;
     }
     &__item::before {
       position: absolute;
@@ -2868,6 +2881,72 @@
       box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.4);
       width: 593px;
     }
+  }
+  .team {
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+    background-image: url(../img/team-bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title {
+      margin: 0 auto 45px auto;
+      text-transform: uppercase;
+      max-width: 805px;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      position: relative;
+      line-height: 30px;
+    }
+    &__title::before,
+    &__title::after {
+      width: 230px;
+      height: 1px;
+      border-bottom: 1px solid #c4c4c4;
+      // background-color: #374148;
+      position: absolute;
+      content: "";
+      top: 50%;
+    }
+    &__title::before {
+      right: 0px;
+    }
+    &__title::after {
+      left: 0px;
+    }
+    &__collage {
+      display: flex;
+      justify-content: center;
+      background-color: #0A6397;
+    }
+    &__img {  
+      height: 100%;
+      width: 72px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+      margin: 45px auto 60px auto;
+      max-width: 570px;
+    }
+    &__p {
+      margin-top: 20px;
+    }
+    &__bottom {
+      text-align: center;
+    }
+    &__link {
+      display: inline-block;
+      background-color: #0093FF;
+      color: white;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 10px 30px;
+      box-shadow: 0px 0px 20px rgba(0, 60, 95, 0.5);
+    }   
   }
 }
 @include media-up(xl) {
@@ -3535,14 +3614,15 @@
     position: absolute;
     top: 22%;
     right: 3%;
-    // width: 100%;
+    width: 100%;
     &__slide {
       display: flex;
-      justify-content: center;
-      gap: 50px;
+      justify-content: flex-end;
+      gap: 70px;
     }
     &__list {
       margin-top: 30px;
+      padding-left: 0;
     }
     &__item {
       font-size: 18px;
@@ -3554,6 +3634,12 @@
       display: flex;
       flex-direction: column;  
       justify-content: center;
+    }
+    &__item:nth-child(3) {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 5px;
+      align-items: center;
     }
     &__item::before {
       position: absolute;
@@ -3581,9 +3667,11 @@
     }
   }
   .team {
-    background-image: url(../img/team-bc.jpg);
     margin: 0 auto;
     padding: 80px 0 100px 0;
+    background-image: url(../img/team-bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     &__title {
       margin: 0 auto 80px auto;
       text-transform: uppercase;
