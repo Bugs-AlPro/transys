@@ -36,6 +36,45 @@
 {name: "team-img12", alt: "Фотография сотрудника 12"}
 ]%}
 
+{% set recComments = [
+{avatar: "rec-comment-icon", alt: "Аватар автора 1", userName: "Фамилия Имя", time: "29 янв. 2019 г. 19:04",
+datetime: "2019-01-29T19:04", like: "one", text: "Хочу выразить благодарность компании Трансис за оказанные услуги по
+доставке
+товаров из Москвы. Быстро,качественно, всегда в срок. Работаю с ними уже 2 года и никаких нареканий. Особую
+благодарность менеджеру Тане за терпение, а водителю Андрею за скорость заставки. Успехов!"},
+{avatar: "rec-comment-icon", alt: "Аватар автора 1", userName: "Фамилия Имя", time: "29 янв. 2019 г. 19:04",
+datetime: "2019-01-29T19:04", like: "five", text: "Хочу выразить благодарность компании Трансис за оказанные услуги по
+доставке
+товаров из Москвы. Быстро,качественно, всегда в срок. Работаю с ними уже 2 года и никаких нареканий. Особую
+благодарность менеджеру Тане за терпение, а водителю Андрею за скорость заставки. Успехов!"},
+{avatar: "rec-comment-icon", alt: "Аватар автора 1", userName: "Фамилия Имя", time: "29 янв. 2019 г. 19:04",
+datetime: "2019-01-29T19:04", like: "two", text: "Хочу выразить благодарность компании Трансис за оказанные услуги по
+доставке
+товаров из Москвы. Быстро,качественно, всегда в срок. Работаю с ними уже 2 года и никаких нареканий. Особую
+благодарность менеджеру Тане за терпение, а водителю Андрею за скорость заставки. Успехов!"},
+{avatar: "rec-comment-icon", alt: "Аватар автора 1", userName: "Фамилия Имя", time: "29 янв. 2019 г. 19:04",
+datetime: "2019-01-29T19:04", like: "four", text: "Хочу выразить благодарность компании Трансис за оказанные услуги по
+доставке
+товаров из Москвы. Быстро,качественно, всегда в срок. Работаю с ними уже 2 года и никаких нареканий. Особую
+благодарность менеджеру Тане за терпение, а водителю Андрею за скорость заставки. Успехов!"},
+{avatar: "rec-comment-icon", alt: "Аватар автора 1", userName: "Фамилия Имя", time: "29 янв. 2019 г. 19:04",
+datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить благодарность компании Трансис за оказанные услуги по
+доставке
+товаров из Москвы. Быстро,качественно, всегда в срок. Работаю с ними уже 2 года и никаких нареканий. Особую
+благодарность менеджеру Тане за терпение, а водителю Андрею за скорость заставки. Успехов!"}
+]%}
+
+{% set recCompany = [
+{href: "#", name: "rec-slide-hellman", alt: "Сотрудничащая компания 1"},
+{href: "#", name: "rec-slide-amkodor", alt: "Сотрудничащая компания 2"},
+{href: "#", name: "rec-slide-tirola", alt: "Сотрудничащая компания 3"},
+{href: "#", name: "rec-slide-trasko", alt: "Сотрудничащая компания 4"},
+{href: "#", name: "rec-slide-santa", alt: "Сотрудничащая компания 5"},
+{href: "#", name: "rec-slide-transconsult", alt: "Сотрудничащая компания 6"},
+{href: "#", name: "rec-slide-girteka", alt: "Сотрудничащая компания 7"},
+{href: "#", name: "rec-slide-asstra", alt: "Сотрудничащая компания 8"}
+]%}
+
 {% macro imageSvg(name, class, width, height) %}
 <svg class="{{ class }}" width="{{ width }}" height="{{ height }}">
   <use xlink:href='img/svg/sprite.svg#{{ name }}'></use>
@@ -440,6 +479,65 @@
       <a href="#" class="team__link">Доверьте груз нашей команде</a>
     </div>
 
+  </section>
+  <section class="recommendation">
+    <h2 class="recommendation__title">Нас рекомендуют</h2>
+    <span class="recommendation__span">согласитесь, это важно.</span>
+    <div class="recommendation__top r-t-slide">
+      <ul class="r-t-slide__list">
+
+        {% for item in recComments %}
+        <li class="r-t-slide__item r-t-s-post">
+          <div class="r-t-s-post__info">
+            <div class="r-t-s-post__contact">
+              <picture class="r-t-s-post__avatar">
+                <source srcset="img/{{ item.avatar }}.webp" type="image/webp">
+                <img src="img/{{ item.avatar }}.png" alt="{{ item.alt }}" class="r-t-s-post__img" width="16px"
+                  height="16px">
+              </picture>
+              <div class="r-t-s-post__name">{{ item.userName }}</div>
+              <time datetime="{{ item.datetime }}" class="r-t-s-post__time">{{ item.time }}</time>
+            </div>
+            <div class="r-t-s-post__likes">
+              <svg class="r-t-s-post__like r-t-s-post__like--{{ item.like }}" width="14px" height="14px">
+                <use xlink:href='img/svg/sprite.svg#rec-like-icon'></use>
+              </svg>
+              <svg class="r-t-s-post__like r-t-s-post__like--{{ item.like }}" width="14px" height="14px">
+                <use xlink:href='img/svg/sprite.svg#rec-like-icon'></use>
+              </svg>
+              <svg class="r-t-s-post__like r-t-s-post__like--{{ item.like }}" width="14px" height="14px">
+                <use xlink:href='img/svg/sprite.svg#rec-like-icon'></use>
+              </svg>
+              <svg class="r-t-s-post__like r-t-s-post__like--{{ item.like }}" width="14px" height="14px">
+                <use xlink:href='img/svg/sprite.svg#rec-like-icon'></use>
+              </svg>
+              <svg class="r-t-s-post__like r-t-s-post__like--{{ item.like }}" width="14px" height="14px">
+                <use xlink:href='img/svg/sprite.svg#rec-like-icon'></use>
+              </svg>
+            </div>
+          </div>
+          <div class="r-t-s-post__text">{{ item.text }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <h3 class="recommendation__title-bottom">Предоставляем контакты наших партнеров для рекомендаций по запросу!</h3>
+    <div class="recommendation__bottom r-b-slide">
+      <ul class="r-b-slide__list">
+
+        {% for item in recCompany %}
+        <li class="r-b-slide__item">
+          <a href="{{ item.href }}" class="r-b-slide__link">
+            <picture class="r-b-slide__picture">
+              <source srcset="img/{{ item.name }}.webp" type="image/webp">
+              <img src="img/{{ item.name }}.png" alt="{{ item.alt }}" class="r-b-slide__img">
+            </picture>
+          </a>
+        </li>
+        {% endfor %}
+
+      </ul>
+    </div>
   </section>
 </main>
 <footer></footer>
