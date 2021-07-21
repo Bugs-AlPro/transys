@@ -4173,4 +4173,163 @@ body {
     filter: grayscale(1); }
   .r-b-slide__link:hover, .r-b-slide__link:focus {
     opacity: 1;
-    filter: grayscale(0); } }
+    filter: grayscale(0); }
+  .offer {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1278B4; }
+    .offer__list {
+      order: 3;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 60px 330px 50px 10px;
+      margin: 0;
+      gap: 50px; }
+    .offer__item {
+      position: relative;
+      font-size: 18px;
+      line-height: 23px;
+      max-width: 390px;
+      color: #fff;
+      min-height: 64px;
+      padding-left: 100px; }
+    .offer__item::before {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 50px;
+      text-align: center;
+      line-height: 60px; }
+    .offer__item:nth-child(1):before {
+      content: "1"; }
+    .offer__item:nth-child(2):before {
+      content: "2"; }
+    .offer__item:nth-child(3):before {
+      content: "3"; }
+    .offer__picture {
+      order: 1;
+      position: relative; }
+    .offer__img {
+      position: absolute;
+      right: -40px;
+      bottom: 0;
+      z-index: 2; }
+    .offer__form {
+      position: relative;
+      width: 500px;
+      order: 2; }
+    .offer__form::before {
+      position: absolute;
+      content: "";
+      width: 115%;
+      height: 106%;
+      top: -3%;
+      left: -8%;
+      background-color: #003C5F;
+      z-index: 1; }
+    .offer__form::after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 106%;
+      top: -3%;
+      right: -7%;
+      background-image: linear-gradient(to bottom, #003C5F, #003C5F 33.33%, #0A6397 33.33%, #0A6397 66.66%, #008DD2 66.66%, #008DD2 100%);
+      z-index: 1; }
+  .o-form {
+    margin-right: 50px;
+    padding: 56px 0px 50px 0; }
+    .o-form__title {
+      font-size: 36px;
+      line-height: 44px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 75px;
+      position: relative;
+      z-index: 2; }
+    .o-form__input {
+      padding: 9px 15px;
+      border: 1px solid #C4C4C4;
+      margin-right: 16px;
+      margin-bottom: 40px;
+      min-width: 220px;
+      position: relative;
+      z-index: 2;
+      color: rgba(24, 27, 24, 0.5); }
+    .o-form__btn {
+      padding: 9px 0;
+      width: 130px;
+      margin-right: 10px;
+      position: relative;
+      z-index: 2; }
+    .o-form__btn--submit {
+      background-color: #22B0F5;
+      border: none;
+      color: #fff; }
+    .o-form__btn--reset {
+      background-color: inherit;
+      border: none;
+      color: #fff;
+      border: 1px solid #fff; }
+  .map {
+    height: 240px;
+    background-image: url(/../img/offer-map-xl.jpg);
+    background-size: cover;
+    position: relative; }
+    .map__img {
+      visibility: hidden; }
+  .footer {
+    background-color: #3C464E;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 40px 350px 30px 350px; }
+    .footer__phone {
+      display: flex;
+      gap: 20px; }
+    .footer__link {
+      display: block;
+      color: #fff;
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 3px; }
+    .footer__location {
+      display: flex;
+      gap: 20px; }
+    .footer__time {
+      display: flex;
+      gap: 20px; }
+    .footer__icon {
+      color: #008DD2; }
+    .footer__text {
+      color: #fff;
+      font-size: 12px;
+      line-height: 18px; }
+  .f-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px; }
+    .f-logo__copyright {
+      max-width: 170px;
+      font-size: 8px;
+      line-height: 12px;
+      color: #757E85; }
+  .f-social {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px; }
+    .f-social__link {
+      color: #70787C; }
+    .f-social__link:hover, .f-social__link:focus {
+      color: #00AAEC; } }

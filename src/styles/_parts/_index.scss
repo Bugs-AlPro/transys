@@ -4690,4 +4690,199 @@
       filter: grayscale(0);
     }
   }
+  .offer {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1278B4;
+    &__list {
+      order: 3;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 60px 330px 50px 10px;
+      margin: 0;
+      gap: 50px;
+    }
+    &__item {
+      position: relative;
+      font-size: 18px;
+      line-height: 23px;
+      max-width: 390px;
+      color: #fff;
+      min-height: 64px;
+      padding-left: 100px;
+    }
+    &__item::before {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 50px;
+      text-align: center;
+      line-height: 60px;
+    }
+    &__item:nth-child(1):before {
+      content: "1";
+    }
+    &__item:nth-child(2):before {
+      content: "2";
+    }
+    &__item:nth-child(3):before {
+      content: "3";
+    }
+    &__picture {
+      order: 1;
+      position: relative;
+    }
+    &__img {
+      // width: 356px;
+      position: absolute;
+      right: -40px;
+      bottom: 0;
+      z-index: 2;
+    }
+
+    &__form {
+      position: relative;
+      width: 500px;
+      order: 2;
+    }
+    &__form::before {
+      position: absolute;
+      content: "";
+      width: 115%;
+      height: 106%;
+      top: -3%;
+      left: -8%;
+      background-color: #003C5F;
+      z-index: 1;
+    }    
+    &__form::after {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 106%;
+      top: -3%;
+      right: -7%;
+      background-image: linear-gradient(to bottom, #003C5F, #003C5F 33.33%, #0A6397 33.33%, #0A6397 66.66%, #008DD2 66.66%, #008DD2 100%);
+      z-index: 1;
+    }    
+  }
+  .o-form {
+    margin-right: 50px;
+    padding: 56px 0px 50px 0;
+    &__title {
+      font-size: 36px;
+      line-height: 44px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 75px;
+      position: relative;
+      z-index: 2;
+    }
+    &__input {
+      padding: 9px 15px;
+      border: 1px solid #C4C4C4;
+      margin-right: 16px;
+      margin-bottom: 40px;
+      min-width: 220px;
+      position: relative;
+      z-index: 2;
+      color: hsla(120, 4%, 10%, 0.5);
+    }
+    &__btn {
+      padding: 9px 0;
+      width: 130px;
+      margin-right: 10px;
+      position: relative;
+      z-index: 2;
+    }
+    &__btn--submit {
+      background-color: #22B0F5;
+      border: none;
+      color: #fff;
+    }
+    &__btn--reset {
+      background-color: inherit;
+      border: none;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+  .map {
+    height: 240px;
+    background-image: url(/../img/offer-map-xl.jpg);
+    background-size: cover;
+    position: relative;
+    // z-index: ;
+    &__img {
+      visibility: hidden;
+    }
+  }
+  .footer {
+    background-color: #3C464E;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 40px 350px 30px 350px;
+    &__phone {
+      display: flex;
+      gap: 20px;
+    }
+    &__link {
+      display: block;
+      color: #fff;
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 3px;
+    }
+    &__location {
+      display: flex;
+      gap: 20px;
+    }
+    &__time {
+      display: flex;
+      gap: 20px;
+    }
+    &__icon {
+      color: #008DD2;
+    }
+    &__text {
+      color: #fff;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  .f-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+    &__copyright {
+      max-width: 170px;
+      font-size: 8px;
+      line-height: 12px;
+      color: #757E85;
+    }
+  }
+  .f-social {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    &__link {
+      color: #70787C;
+    }
+    &__link:hover,
+    &__link:focus {
+      color: #00AAEC;
+    }
+  }
 }
