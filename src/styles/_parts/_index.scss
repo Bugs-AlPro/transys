@@ -4833,6 +4833,18 @@
     justify-content: space-between;
     gap: 50px;
     padding: 40px 350px 30px 350px;
+    &__logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 26px;
+    }
+    &__copyright {
+      max-width: 170px;
+      font-size: 8px;
+      line-height: 12px;
+      color: #757E85;
+    }
     &__phone {
       display: flex;
       gap: 20px;
@@ -4860,28 +4872,16 @@
       font-size: 12px;
       line-height: 18px;
     }
-  }
-  .f-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 26px;
-    &__copyright {
-      max-width: 170px;
-      font-size: 8px;
-      line-height: 12px;
-      color: #757E85;
+    &__social {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px;
     }
-  }
-  .f-social {
-    display: flex;
-    align-items: flex-start;
-    gap: 25px;
-    &__link {
+    &__social-link {
       color: #70787C;
     }
-    &__link:hover,
-    &__link:focus {
+    &__social-link:hover,
+    &__social-link:focus {
       color: #00AAEC;
     }
   }

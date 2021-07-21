@@ -4294,6 +4294,16 @@ body {
     justify-content: space-between;
     gap: 50px;
     padding: 40px 350px 30px 350px; }
+    .footer__logo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 26px; }
+    .footer__copyright {
+      max-width: 170px;
+      font-size: 8px;
+      line-height: 12px;
+      color: #757E85; }
     .footer__phone {
       display: flex;
       gap: 20px; }
@@ -4315,21 +4325,11 @@ body {
       color: #fff;
       font-size: 12px;
       line-height: 18px; }
-  .f-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 26px; }
-    .f-logo__copyright {
-      max-width: 170px;
-      font-size: 8px;
-      line-height: 12px;
-      color: #757E85; }
-  .f-social {
-    display: flex;
-    align-items: flex-start;
-    gap: 25px; }
-    .f-social__link {
+    .footer__social {
+      display: flex;
+      align-items: flex-start;
+      gap: 25px; }
+    .footer__social-link {
       color: #70787C; }
-    .f-social__link:hover, .f-social__link:focus {
+    .footer__social-link:hover, .footer__social-link:focus {
       color: #00AAEC; } }
