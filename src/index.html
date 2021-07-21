@@ -545,24 +545,27 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       </ul>
     </div>
   </section>
-  <section class="offer">
-    {{ imagePng('offer__picture', 'offer-face', 'offer__img', 'Сотрудник call-center') }}
-    <ol class="offer__list">
-      <li class="offer__item">Подберем <b>2-3</b> варианта транспорта за <b>60</b> минут по цене от <b>0,5</b> евро за
-        <b>1</b> км.
-      </li>
-      <li class="offer__item">Согласуем ставку исходя из ваших условий</li>
-      <li class="offer__item">Снизим расходы на доставку до 20% за счёт собственного транспорта</li>
-    </ol>
-    <form action="POST" class="offer__form o-form">
-      <legend class="o-form__title">Узнайте<br>стоимость перевозки<br>по своему маршруту</legend>
-      <input type="text" id="userName" class="o-form__input" placeholder="Укажите ваше имя">
-      <label for="userName" class="hidden-text">Ваше имя</label>
-      <input type="text" id="tel" class="o-form__input" placeholder="Ваш номер телефона">
-      <label for="tel" class="hidden-text">Ваш номер телефона</label>
-      <button type="submit" class="o-form__btn o-form__btn--submit">Узнать</button>
-      <button type="reset" class="o-form__btn o-form__btn--reset">Отмена</button>
-    </form>
+  <section class="offer-wrap">
+    <div class="offer">
+      {{ imagePng('offer__picture', 'offer-face', 'offer__img', 'Сотрудник call-center') }}
+      <ol class="offer__list">
+        <li class="offer__item">Подберем <b>2-3</b> варианта транспорта за <b>60</b> минут по цене от <b>0,5</b> евро
+          за
+          <b>1</b> км.
+        </li>
+        <li class="offer__item">Согласуем ставку исходя из ваших условий</li>
+        <li class="offer__item">Снизим расходы на доставку до 20% за счёт собственного транспорта</li>
+      </ol>
+      <form action="POST" class="offer__form o-form">
+        <legend class="o-form__title">Узнайте<br>стоимость перевозки<br>по своему маршруту</legend>
+        <input type="text" id="userName" class="o-form__input" placeholder="Укажите ваше имя">
+        <label for="userName" class="hidden-text">Ваше имя</label>
+        <input type="text" id="tel" class="o-form__input" placeholder="Ваш номер телефона">
+        <label for="tel" class="hidden-text">Ваш номер телефона</label>
+        <button type="submit" class="o-form__btn o-form__btn--submit">Узнать</button>
+        <button type="reset" class="o-form__btn o-form__btn--reset">Отмена</button>
+      </form>
+    </div>
 
   </section>
   <section class="map">
