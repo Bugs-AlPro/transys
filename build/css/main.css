@@ -1333,6 +1333,8 @@ body {
       color: #fff;
       font-size: 12px;
       line-height: 18px; }
+    .footer__text--location {
+      display: block; }
     .footer__text--day {
       display: none; }
     .footer__social {
