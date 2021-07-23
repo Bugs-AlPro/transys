@@ -1258,7 +1258,7 @@ body {
       position: absolute;
       width: 480px;
       right: 0;
-      background-image: url(/../img/offer-map-sm.jpg);
+      background-image: url(../img/offer-map-sm.jpg);
       background-size: cover; }
     .map__img {
       visibility: hidden; }
