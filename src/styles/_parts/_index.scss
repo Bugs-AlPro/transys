@@ -43,14 +43,14 @@
       width: 100%;
       position: relative;
       z-index: 2;
-      text-align: center;
       overflow: hidden;
       margin-top: 20px;
     }
+    &__picture {
+      width: 100%;
+    }
     &__img {
-      width: 397px;
-      position: relative;
-      left: -50px;
+      width: 100%; 
     }
   }
   .advantage::before {
@@ -1047,7 +1047,7 @@
       right: 20px;
     }
     &__wrap-img {
-      // width: 100%;
+      width: 100%;
       position: relative;
       // top: 80px;
       text-align: center;
@@ -1056,9 +1056,10 @@
       margin-top: 18px;
     }
     &__img {
-      width: 520px;
+      // width: 520px;
+      width: 100%;
       position: relative;
-      left: -28px;
+      // left: -28px;
     }
   }
   .advantage::before {
@@ -1801,6 +1802,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    overflow: hidden;
     &__title {
       margin: 0 auto 40px auto;
       text-transform: uppercase;
@@ -2278,14 +2280,17 @@
       right: 0;
     }
     &__wrap-img {
-      width: 92%;
+      width: 100%;
       position: relative;
       z-index: 2;
       margin-top: 25px;
-      text-align: center;
+      padding-left: 20px;
+      // text-align: center;
     }
     &__img {
-      width: 620px;
+      // width: 620px;
+      width: 100%;
+      max-width: 620px;
       position: relative;
     }
   }
