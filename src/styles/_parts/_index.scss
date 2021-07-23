@@ -802,7 +802,7 @@
       flex-direction: column;
       justify-content: space-between;
       gap: 30px;
-      padding: 35px 28px 35px 28px;
+      padding: 40px 28px 35px 28px;
       margin: 0;
     }
     &__list::after {
@@ -902,10 +902,15 @@
   }
   .map {
     height: 240px;
-    background-image: url(/../img/offer-map-sm.jpg);
-    background-size: cover;
     position: relative;
     overflow: hidden;
+    &__wrap {
+      position: absolute;
+      width: 480px;
+      right: 0;
+      background-image: url(/../img/offer-map-sm.jpg);
+      background-size: cover;
+    }
     &__img {
       visibility: hidden;
     }
@@ -971,7 +976,7 @@
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 2;
-
+      min-width: 104px;
     }
     &__block {
       position: relative;
@@ -995,7 +1000,11 @@
       font-size: 12px;
       line-height: 18px;
     }
+    &__text--day {
+      display: none;
+    }
     &__social {
+      min-width: 104px;
       display: flex;
       align-items: flex-start;
       justify-content: flex-end;
@@ -1676,8 +1685,9 @@
       left: 0px;
     }
     &__list {
-      // width: 1300px;
-      min-height: 570px;
+      max-height: 740px;
+      min-height: 550px;
+      height: 110vw;
       margin: 35px auto 0 auto;
       display: flex;
       justify-content: space-around;
@@ -2225,6 +2235,9 @@
       color: #fff;
       font-size: 12px;
       line-height: 18px;
+    }
+    &__text span {
+      display: block;
     }
     &__social {
       display: flex;

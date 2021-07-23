@@ -571,7 +571,9 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
   </section>
   <section class="map">
     <h2 class="hidden-text">Карта города с отометкой точного адреса</h2>
-    {{ imageJpg('o-map__picture', 'offer-map', 'map__img', 'Карта с отметкой точного адреса') }}
+    <div class="map__wrap">
+      {{ imageJpg('o-map__picture', 'offer-map', 'map__img', 'Карта с отметкой точного адреса') }}
+    </div>
   </section>
 </main>
 <footer class="footer">
@@ -595,7 +597,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       {{ imageSvg('location-point', 'svg', '16px', '16px') }}
     </div>
     <div class="footer__block">
-      <span class="footer__text">Советская, 68<br>Беларусь, г. Брест</span>
+      <div class="footer__text">Советская, 68<br><span>Беларусь, </span><span>г. Брест</span></div>
     </div>
   </div>
   <div class="footer__time">
@@ -603,7 +605,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       {{ imageSvg('time-work', 'svg', '15px', '15px') }}
     </div>
     <div class="footer__block footer__block--time">
-      <span class="footer__text">9:00 - 18:00<br>понедельник - пятница</span>
+      <div class="footer__text">9:00 - 18:00<br><span class="footer__text--day">понедельник - пятница</span></div>
     </div>
   </div>
   <div class="footer__social">
