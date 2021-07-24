@@ -3026,6 +3026,8 @@ body {
       font-weight: 400;
       font-size: 12px;
       line-height: 14px; }
+    .r-t-s-post__likes {
+      width: 83px; }
     .r-t-s-post__like {
       fill: #DADADA;
       width: 14px;
@@ -3965,6 +3967,8 @@ body {
       font-weight: 400;
       font-size: 12px;
       line-height: 14px; }
+    .r-t-s-post__likes {
+      width: 83px; }
     .r-t-s-post__like {
       fill: #DADADA;
       width: 14px;
@@ -4888,6 +4892,8 @@ body {
       font-weight: 400;
       font-size: 12px;
       line-height: 14px; }
+    .r-t-s-post__likes {
+      width: 83px; }
     .r-t-s-post__like {
       fill: #DADADA; }
       .r-t-s-post__like--one:nth-child(1) {
