@@ -711,6 +711,7 @@
     &__info {
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       padding-left: 22px;
       position: relative;
       margin-bottom: 40px;
@@ -722,7 +723,7 @@
     }
     &__name {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 18px;
     }
     &__time,
@@ -732,7 +733,8 @@
       line-height: 14px;
     }
     &__likes {
-      width: 83px;
+      min-width: 83px;
+      margin-top: 3px;
     }
     &__like {
       fill: #DADADA;
@@ -1961,6 +1963,7 @@
     &__info {
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       padding-left: 22px;
       position: relative;
       margin-bottom: 40px;
@@ -1972,7 +1975,7 @@
     }
     &__name {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 18px;
     }
     &__time,
@@ -1982,7 +1985,8 @@
       line-height: 14px;
     }
     &__likes {
-      width: 83px;
+      min-width: 83px;
+      margin-top: 3px;
     }
     &__like {
       fill: #DADADA;
@@ -3195,6 +3199,7 @@
     &__info {
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       padding-left: 22px;
       position: relative;
       margin-bottom: 40px;
@@ -3206,7 +3211,7 @@
     }
     &__name {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 18px;
     }
     &__time,
@@ -3216,7 +3221,8 @@
       line-height: 14px;
     }
     &__likes {
-      width: 83px;
+      min-width: 83px;
+      margin-top: 3px;
     }
     &__like {
       fill: #DADADA;
@@ -4375,6 +4381,7 @@
     &__info {
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       padding-left: 22px;
       position: relative;
       margin-bottom: 40px;
@@ -4386,7 +4393,7 @@
     }
     &__name {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 18px;
     }
     &__time,
@@ -4396,7 +4403,8 @@
       line-height: 14px;
     }
     &__likes {
-      width: 83px;
+      min-width: 83px;
+      margin-top: 3px;
     }
     &__like {
       fill: #DADADA;

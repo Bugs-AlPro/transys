@@ -1107,6 +1107,7 @@ body {
     .r-t-s-post__info {
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       padding-left: 22px;
       position: relative;
       margin-bottom: 40px; }
@@ -1116,14 +1117,15 @@ body {
       left: 0; }
     .r-t-s-post__name {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 18px; }
     .r-t-s-post__time, .r-t-s-post__text {
       font-weight: 400;
       font-size: 12px;
       line-height: 14px; }
     .r-t-s-post__likes {
-      width: 83px; }
+      min-width: 83px;
+      margin-top: 3px; }
     .r-t-s-post__like {
       fill: #DADADA;
       width: 14px;
@@ -2034,6 +2036,7 @@ body {
     .r-t-s-post__info {
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       padding-left: 22px;
       position: relative;
       margin-bottom: 40px; }
@@ -2043,14 +2046,15 @@ body {
       left: 0; }
     .r-t-s-post__name {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 18px; }
     .r-t-s-post__time, .r-t-s-post__text {
       font-weight: 400;
       font-size: 12px;
       line-height: 14px; }
     .r-t-s-post__likes {
-      width: 83px; }
+      min-width: 83px;
+      margin-top: 3px; }
     .r-t-s-post__like {
       fill: #DADADA;
       width: 14px;
@@ -3011,6 +3015,7 @@ body {
     .r-t-s-post__info {
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       padding-left: 22px;
       position: relative;
       margin-bottom: 40px; }
@@ -3020,14 +3025,15 @@ body {
       left: 0; }
     .r-t-s-post__name {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 18px; }
     .r-t-s-post__time, .r-t-s-post__text {
       font-weight: 400;
       font-size: 12px;
       line-height: 14px; }
     .r-t-s-post__likes {
-      width: 83px; }
+      min-width: 83px;
+      margin-top: 3px; }
     .r-t-s-post__like {
       fill: #DADADA;
       width: 14px;
@@ -3952,6 +3958,7 @@ body {
     .r-t-s-post__info {
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       padding-left: 22px;
       position: relative;
       margin-bottom: 40px; }
@@ -3961,14 +3968,15 @@ body {
       left: 0; }
     .r-t-s-post__name {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 18px; }
     .r-t-s-post__time, .r-t-s-post__text {
       font-weight: 400;
       font-size: 12px;
       line-height: 14px; }
     .r-t-s-post__likes {
-      width: 83px; }
+      min-width: 83px;
+      margin-top: 3px; }
     .r-t-s-post__like {
       fill: #DADADA;
       width: 14px;
