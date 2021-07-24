@@ -8,6 +8,10 @@
 a {
   text-decoration: none; }
 
+.tns-visually-hidden {
+  position: absolute;
+  left: -10000em; }
+
 .svg {
   fill: currentColor; }
 

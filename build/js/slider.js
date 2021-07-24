@@ -1,26 +1,23 @@
 var slider = tns({
-  container: '.c-list',
-  items: 1,
-  loop: false,
+  container: '.g-preview',
+  // items: 1,
+  // loop: true,
   mouseDrag: true,
-  controls: true,
-  controlsText: '  ',
-  prevButton: '.prevButton',
-  nextButton: '.nextButton',
-  navContainer: '.navContainer',
-  navPosition: 'botoom',
+  controls: false,
+  nav: false,
+  fixedWidth: 285,
   responsive: {
     200: {
-      items: 1
-    },
-    577: {
-      items: 2
+      fixedWidth: 183
     },
     768: {
-      items: 3
+      fixedWidth: 244
     },
     992: {
-      items: 4
+      fixedWidth: 285
+    },
+    1800: {
+      fixedWidth: 'auto'
     }
   }
 });
