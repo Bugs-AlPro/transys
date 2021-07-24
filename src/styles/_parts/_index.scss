@@ -698,8 +698,8 @@
       position: relative;
       display: flex;
       gap: 15px;
-      width: 500%;
-      left: -90%;
+      // width: 500%;
+      // left: -90%;
     }
     &__item {
       max-width: 275px;
@@ -730,6 +730,9 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 14px;
+    }
+    &__likes {
+      width: 83px;
     }
     &__like {
       fill: #DADADA;
@@ -774,6 +777,7 @@
     }
     &__img {
       width: 70%;
+      max-width: 135px;
     }
     &__link {
       display: block;
@@ -1693,6 +1697,7 @@
       max-height: 740px;
       min-height: 550px;
       height: 110vw;
+      // height: 600px;
       margin: 35px auto 0 auto;
       display: flex;
       justify-content: space-around;
@@ -1943,8 +1948,8 @@
       position: relative;
       display: flex;
       gap: 15px;
-      width: 300%;
-      left: -30%;
+      // width: 300%;
+      // left: -30%;
     }
     &__item {
       max-width: 275px;
@@ -1975,6 +1980,9 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 14px;
+    }
+    &__likes {
+      width: 83px;
     }
     &__like {
       fill: #DADADA;
@@ -2019,6 +2027,7 @@
     }
     &__img {
       width: 70%;
+      max-width: 135px;
     }
     &__link {
       display: block;
@@ -3173,11 +3182,11 @@
       position: relative;
       display: flex;
       gap: 15px;
-      width: 200%;
-      left: -5%;
+      // width: 200%;
+      // left: -5%;
     }
     &__item {
-      max-width: 275px;
+      // max-width: 275px;
       box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
     }
   }
@@ -3249,6 +3258,7 @@
     }
     &__img {
       width: 70%;
+      max-width: 160px;
     }
     &__link {
       display: block;
@@ -4348,11 +4358,12 @@
       position: relative;
       display: flex;
       gap: 15px;
-      width: 150%;
-      left: -5%;
+      // width: 150%;
+      // left: -5%;
     }
     &__item {
-      max-width: 275px;
+      // max-width: 285px;
+      // min-width: 250px;
       box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
     }
   }
@@ -4424,6 +4435,7 @@
     }
     &__img {
       width: 70%;
+      max-width: 160px;
     }
     &__link {
       display: block;
@@ -5508,8 +5520,8 @@
       position: relative;
       display: flex;
       gap: 20px;
-      width: 120%;
-      left: -5%;
+      // width: 120%;
+      // left: -5%;
     }
     &__item {
       max-width: 392px;
@@ -5572,6 +5584,7 @@
     }
   }
   .r-b-slide {
+    overflow: hidden;
     &__list {
       display: flex;
       justify-content: space-around;
