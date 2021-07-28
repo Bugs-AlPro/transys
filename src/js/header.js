@@ -5,7 +5,7 @@ let headerSvgTime = document.querySelector('.info-h__icon--time');
 let headerSvgPhone = document.querySelector('.info-h__icon--phone');
 
 window.onscroll = function () {
-  if (window.pageYOffset > 10 || window.pageYOffset < 0) {
+  if (window.pageYOffset !== 0) {
     headerMenu.classList.add('header-h--scroll');
     headerLink.classList.add('info-h__link--scroll');
     headerSvgLoc.classList.add('info-h__icon--scroll');
