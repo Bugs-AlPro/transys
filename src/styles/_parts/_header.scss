@@ -109,7 +109,7 @@ ul, li, p {
     }
   }
   .header-h {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
@@ -137,6 +137,17 @@ ul, li, p {
       width: 135px;
       height: 15px;
     }
+  }
+  .header-h--scroll {
+    background-color: #3C464E;
+    z-index: 3;
+  }
+  // .info-h__link--scroll {
+  //   background-color: #00AAEC;
+  // }
+  .info-h__icon--scroll {
+    // color: #008DD2;
+    fill: #008DD2;
   }
   .info-h {
     &__item--location {
@@ -229,7 +240,7 @@ ul, li, p {
     }
   }
   .header-h {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
@@ -257,6 +268,13 @@ ul, li, p {
       width: 135px;
       height: 15px;
     }
+  }
+  .header-h--scroll {
+    background-color: #3C464E;
+    z-index: 3;
+  }
+  .info-h__link--scroll {
+    background-color: #00AAEC;
   }
   .info-h {
     &__item--location {
@@ -350,7 +368,7 @@ ul, li, p {
     }
   }
   .header-h {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
@@ -378,6 +396,16 @@ ul, li, p {
       width: 135px;
       height: 15px;
     }
+  }
+  .header-h--scroll {
+    background-color: #3C464E;
+    z-index: 3;
+  }
+  .info-h__link--scroll {
+    background-color: #00AAEC;
+  }
+  .info-h__icon--scroll {
+    color: #008DD2;
   }
   .language {
     display: flex;
@@ -501,7 +529,7 @@ ul, li, p {
     }
   }
   .header-h {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
@@ -528,6 +556,16 @@ ul, li, p {
       width: 175px;
       height: 20px;
     }
+  }
+  .header-h--scroll {
+    background-color: #3C464E;
+    z-index: 3;
+  }
+  .info-h__link--scroll {
+    background-color: #00AAEC;
+  }
+  .info-h__icon--scroll {
+    color: #008DD2;
   }
   .language {
     display: flex;
@@ -650,7 +688,7 @@ ul, li, p {
     }
   }
   .header-h {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
@@ -659,6 +697,7 @@ ul, li, p {
     align-items: center;
     justify-content: space-between;
     padding: 25px 45px;
+
     &__btn {
       display: none;
     }
@@ -671,6 +710,16 @@ ul, li, p {
       max-width: 50%;
       flex-grow: 3;
     }
+  }
+  .header-h--scroll {
+    background-color: #3C464E;
+    z-index: 3;
+  }
+  .info-h__link--scroll {
+    background-color: #00AAEC;
+  }
+  .info-h__icon--scroll {
+    color: #008DD2;
   }
   .language {
     display: flex;
