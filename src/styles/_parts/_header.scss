@@ -121,13 +121,35 @@ ul, li, p {
     &__btn {
       border: none;
       display: block;
+      height: 21px;
+      width: 21px;
       background-color: inherit;
-      color: #fff;    
+      color: #fff; 
       margin-right: 15px;   
+      cursor: pointer;  
+      position: relative; 
+      padding: 3px;
     }
-    &__btn svg {
-      width: 18px;
-      height: 18px;
+    &__btn::before,
+    &__btn::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 1.6px;
+      background-color: #fff;
+      left: 3px;
+    }
+    &__btn::before {
+      top: 6px;
+    }
+    &__btn::after {
+      bottom: 6px;
+    }
+    &__btn--div {
+      display: block;
+      width: 15px;
+      height: 1.6px;
+      background-color: #fff;
     }
     &__logo {
       margin-right: 10px;
@@ -155,6 +177,9 @@ ul, li, p {
     }
     &__item--time {
       display: none;
+    }
+    &__link {
+      display: block;
     }
     &__link svg {
       width: 19px;
@@ -252,13 +277,35 @@ ul, li, p {
     &__btn {
       border: none;
       display: block;
+      height: 25px;
+      width: 25px;
       background-color: inherit;
-      color: #fff;    
+      color: #fff; 
       margin-right: 15px;   
+      cursor: pointer;  
+      position: relative; 
+      padding: 5px;
     }
-    &__btn svg {
-      width: 18px;
-      height: 18px;
+    &__btn::before,
+    &__btn::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 1.6px;
+      background-color: #fff;
+      left: 5px;
+    }
+    &__btn::before {
+      top: 7px;
+    }
+    &__btn::after {
+      bottom: 7px;
+    }
+    &__btn--div {
+      display: block;
+      width: 16px;
+      height: 1.6px;
+      background-color: #fff;
     }
     &__logo {
       margin-right: 10px;
@@ -380,13 +427,35 @@ ul, li, p {
     &__btn {
       border: none;
       display: block;
+      height: 30px;
+      width: 30px;
       background-color: inherit;
-      color: #fff;    
+      color: #fff; 
       margin-right: 15px;   
+      cursor: pointer;  
+      position: relative; 
+      padding: 5px;
     }
-    &__btn svg {
-      width: 18px;
-      height: 18px;
+    &__btn::before,
+    &__btn::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 1.6px;
+      background-color: #fff;
+      left: 5px;
+    }
+    &__btn::before {
+      top: 8.5px;
+    }
+    &__btn::after {
+      bottom: 8.5px;
+    }
+    &__btn--div {
+      display: block;
+      width: 16px;
+      height: 1.6px;
+      background-color: #fff;
     }
     &__logo {
       margin-right: 10px;
@@ -541,12 +610,35 @@ ul, li, p {
     &__btn {
       border: none;
       display: block;
+      height: 30px;
+      width: 30px;
       background-color: inherit;
       color: #fff; 
-      margin-right: 30px;      
+      margin-right: 30px;   
+      cursor: pointer;  
+      position: relative; 
+      padding: 5px;
     }
-    &__btn svg {
-      padding: 2px;
+    &__btn::before,
+    &__btn::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      left: 5px;
+    }
+    &__btn::before {
+      top: 7px;
+    }
+    &__btn::after {
+      bottom: 7px;
+    }
+    &__btn--div {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
     }
     &__logo {
       margin-right: 30px;
