@@ -706,6 +706,7 @@ ul, li, p {
       margin-left: 10px;
       flex-grow: 1;
     }
+
     &__menu {
       max-width: 50%;
       flex-grow: 3;
@@ -714,6 +715,16 @@ ul, li, p {
   .header-h--scroll {
     background-color: #3C464E;
     z-index: 3;
+  }
+  .header-h--scroll::before {
+    content: "";
+    width: 240px;
+    height: 3px;
+    background-image: linear-gradient(to left, #008DD2 0%, #0A6397 50.52%, #003C5F 100%);;
+    left: 0px;
+    bottom: -3px;
+    z-index: 3;
+    position: absolute;
   }
   .info-h__link--scroll {
     background-color: #00AAEC;
