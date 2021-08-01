@@ -106,7 +106,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
 
 {% block content %}
 <header class="header">
-  <div class="header__head header-h">
+  <div class="header__head header-h header-h--scroll">
     <button type="button" class="header-h__btn">
       <div class="header-h__btn--div"></div>
     </button>
@@ -178,7 +178,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
     </div>
     <ul class="header-h__info info-h">
       <li class="info-h__item info-h__item--location">
-        <div class="info-h__icon info-h__icon--location">
+        <div class="info-h__icon info-h__icon--location info-h__icon--scroll">
           {{ imageSvg('location-point', 'svg', '16px', '16px') }}
         </div>
         <div class="info-h__block">
@@ -186,7 +186,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
         </div>
       </li>
       <li class="info-h__item info-h__item--time">
-        <div class="info-h__icon info-h__icon--time">
+        <div class="info-h__icon info-h__icon--time info-h__icon--scroll">
           {{ imageSvg('time-work', 'svg', '15px', '15px') }}
         </div>
         <div class="info-h__block">
@@ -195,7 +195,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       </li>
       <li class="info-h__item info-h__item--phone">
         <div class="info-h__block">
-          <a href="#" class="info-h__link">
+          <a href="#" class="info-h__link info-h__link--scroll">
             {{ imageSvg('icon-phone', 'svg info-h__icon--phone', '16px', '16px') }}
             <span class="info-h__link--text">Обратная связь</span>
           </a>
