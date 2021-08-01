@@ -18,6 +18,25 @@ window.onscroll = function () {
     headerSvgLoc.classList.add('info-h__icon--scroll');
     headerSvgTime.classList.add('info-h__icon--scroll');
     headerSvgPhone.classList.add('info-h__icon--scroll');
-
   }
 };
+
+let sectionMenu = document.querySelector('.menu');
+let btnMenu = document.querySelector('.header-h__btn');
+let btnMenuLogoWhite = document.querySelector('.header-h__logo--white');
+let btnMenuLogoBlack = document.querySelector('.header-h__logo--black');
+
+btnMenu.onclick = function () {
+  if (sectionMenu.classList.contains('menu--open')) {
+    sectionMenu.classList.remove('menu--open');
+    btnMenuLogoBlack.style.display = 'block';
+    btnMenuLogoWhite.style.display = 'none';
+    btnMenu.classList.add('header-h__btn--click');
+  } else {
+    sectionMenu.classList.add('menu--open');
+    btnMenu.classList.remove('header-h__btn--click');
+    btnMenuLogoBlack.style.display = 'none';
+    btnMenuLogoWhite.style.display = 'block';
+  }
+};
+

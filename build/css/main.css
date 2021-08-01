@@ -422,7 +422,50 @@ body {
 
 @media (min-width: 992px) and (max-width: 1799.98px) {
   .menu {
-    display: none; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    position: absolute;
+    z-index: 3;
+    height: 766px;
+    width: 390px;
+    max-height: 100vh;
+    top: 0;
+    left: 0;
+    padding-right: 90px;
+    padding-top: 90px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to left, #003C5F 0px, #003C5F 30px, #0A6397 30px, #0A6397 60px, #008DD2 60px, #008DD2 90px, #fff 90px, #fff 100%); }
+  .menu--open {
+    left: -100%;
+    transform: 0.4s; }
+  .nav {
+    display: flex;
+    flex-direction: column; }
+    .nav__link {
+      color: #3C464E;
+      display: block;
+      padding: 15px 0; }
+    .nav__link--activ {
+      color: #35A0EE; }
+    .nav__link:hover {
+      color: #35A0EE; }
+  .info-m {
+    display: block; }
+    .info-m__item {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px; }
+    .info-m__icon {
+      color: #008DD2; }
+    .info-m__link {
+      display: block;
+      margin-bottom: 5px;
+      color: #3C464E; }
+    .info-m__text {
+      line-height: 18px; }
   .header {
     margin: 0; }
   .header-b {
@@ -484,7 +527,7 @@ body {
       display: none; }
   .header-h {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 100%;
@@ -502,18 +545,40 @@ body {
       margin-right: 30px;
       cursor: pointer;
       position: relative;
-      padding: 5px; }
+      padding: 5px;
+      z-index: 4; }
+    .header-h__btn--click {
+      background-color: white;
+      position: relative; }
+    .header-h__logo--white {
+      display: none;
+      position: relative;
+      z-index: 4; }
+    .header-h__logo--black {
+      display: none;
+      position: relative;
+      z-index: 4; }
     .header-h__btn::before, .header-h__btn::after {
       content: "";
       position: absolute;
       width: 20px;
       height: 2px;
       background-color: #fff;
-      left: 5px; }
+      left: 5px;
+      transition: 0.2s; }
     .header-h__btn::before {
       top: 7px; }
     .header-h__btn::after {
       bottom: 7px; }
+    .header-h__btn--click::after {
+      background-color: #3C464E;
+      transform: rotate(-45deg);
+      top: 50%;
+      transition: 0.2s; }
+    .header-h__btn--click::before {
+      background-color: #3C464E;
+      transform: rotate(45deg);
+      top: 50%; }
     .header-h__btn--div {
       display: block;
       width: 20px;
