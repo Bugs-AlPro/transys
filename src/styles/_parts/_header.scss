@@ -736,6 +736,9 @@ ul, li, p {
     &__link--current {
       color: #fff;
     }
+    &__link:hover {
+      color: #fff;
+    }
   }
   .info-h {
     display: flex;
@@ -1000,6 +1003,9 @@ ul, li, p {
     &__link--current {
       color: #fff;
     }
+    &__link:hover {
+      color: #fff;
+    }
   }
   .info-h {
     display: flex;
@@ -1126,7 +1132,14 @@ ul, li, p {
       margin-left: 10px;
       flex-grow: 1;
     }
-
+    &__logo--white {
+      display: block;
+      position: relative;
+      z-index: 4;
+    }
+    &__logo--black {
+      display: none;
+    }
     &__menu {
       max-width: 50%;
       flex-grow: 3;
@@ -1162,6 +1175,9 @@ ul, li, p {
       padding: 5px;
     }
     &__link--current {
+      color: #fff;
+    }
+    &__link:hover {
       color: #fff;
     }
   }

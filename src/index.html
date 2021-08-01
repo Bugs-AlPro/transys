@@ -132,19 +132,19 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       <nav class="menu__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link nav__link--activ">Виды перевозок</a>
+            <a href="#types" class="nav__link">Виды перевозок</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Качество работы</a>
+            <a href="#quality" class="nav__link">Качество работы</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Команда</a>
+            <a href="#team" class="nav__link">Команда</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Партнёры</a>
+            <a href="#recommendation" class="nav__link">Партнёры</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Контакты</a>
+            <a href="#offer-wrap" class="nav__link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -232,11 +232,11 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
         {{ imageSvg('instagram', 'svg', '29px', '29px') }}
       </a>
     </div>
-    <a href="#" class="header-b__next-link"></a>
+    <a href="#advantage" class="header-b__next-link"></a>
   </div>
 </header>
 <main class="main">
-  <section class="advantage">
+  <section class="advantage" id="advantage">
     <div class="conteiner">
       <h2 class="advantage__title">Наши преимущества</h2>
       <div class="advantage__wrap-img">
@@ -270,7 +270,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       </ul>
     </div>
   </section>
-  <section class="types">
+  <section class="types" id="types">
     <div class="conteiner">
       <h2 class="types__title"><span>Виды </span><span>осуществляемых </span><span>перевозок</span></h2>
       <ul class="types__list">
@@ -326,7 +326,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       </ul>
     </div>
   </section>
-  <section class="quality">
+  <section class="quality" id="quality">
     <div class="conteiner">
       <div class="quality__head q-head">
         <div class="q-head__photo">
@@ -463,7 +463,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       </ul>
     </div>
   </section>
-  <section class="team">
+  <section class="team" id="team">
     <h2 class="team__title">Наша команда</h2>
     <div class="team__collage">
       {% for item in teamImg %}
@@ -483,11 +483,10 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       <p class="team__p">Вносим вклад в развитие Вашего бизнеса!</p>
     </div>
     <div class="team__bottom">
-      <a href="#" class="team__link">Доверьте груз нашей команде</a>
+      <a href="#form-request" class="team__link">Доверьте груз нашей команде</a>
     </div>
-
   </section>
-  <section class="recommendation">
+  <section class="recommendation" id="recommendation">
     <h2 class="recommendation__title">Нас рекомендуют</h2>
     <span class="recommendation__span">согласитесь, это важно.</span>
     <div class="recommendation__top r-t-slide">
@@ -546,7 +545,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
       </ul>
     </div>
   </section>
-  <section class="offer-wrap">
+  <section class="offer-wrap" id="offer-wrap">
     <h2 class="hidden-text">Предложение удобных условий и цены</h2>
     <div class="offer">
       {{ imagePng('offer__picture', 'offer-face', 'offer__img', 'Сотрудник call-center') }}
@@ -558,7 +557,7 @@ datetime: "2019-01-29T19:04", like: "three", text: "Хочу выразить б
         <li class="offer__item">Согласуем ставку исходя из ваших условий</li>
         <li class="offer__item">Снизим расходы на доставку до 20% за счёт собственного транспорта</li>
       </ol>
-      <form action="POST" class="offer__form o-form">
+      <form action="POST" class="offer__form o-form" id="form-request">
         <fieldset class="o-form__title">Узнайте<br>стоимость перевозки<br>по своему маршруту</fieldset>
         <input type="text" id="userName" class="o-form__input" placeholder="Укажите ваше имя">
         <label for="userName" class="hidden-text">Ваше имя</label>
