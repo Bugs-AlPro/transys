@@ -46,7 +46,7 @@ ul, li, p {
     position: absolute; 
     z-index: 3;
     top: 0;
-    left: 0;
+    left: -130%; 
     padding-right: 45px;
     padding-top: 50px;
     padding-left: 40px;
@@ -54,11 +54,10 @@ ul, li, p {
     background-image: linear-gradient(to left, #003C5F 0px, #003C5F 15px, #0A6397 15px, #0A6397 30px, #008DD2 30px, #008DD2 45px, #fff 45px, #fff 100%);
   }
   .menu--open {
-    left: -130%;    
+   left: 0;
     transform: 0.4s;
   }
   .nav {
-
     display: flex;
     flex-direction: column;
     &__link {
@@ -190,7 +189,7 @@ ul, li, p {
     }
 
     &__logo--white {
-      display: none;
+      display: block;
       position: relative;
       z-index: 4;
     }
@@ -283,7 +282,7 @@ ul, li, p {
     position: absolute; 
     z-index: 3;
     top: 0;
-    left: 0;
+    left: -100%;   
     padding-right: 42px;
     padding-top: 60px;
     padding-left: 40px;
@@ -291,7 +290,7 @@ ul, li, p {
     background-image: linear-gradient(to left, #003C5F 0px, #003C5F 14px, #0A6397 14px, #0A6397 28px, #008DD2 28px, #008DD2 42px, #fff 42px, #fff 100%);
   }
   .menu--open {
-    left: -100%;    
+    left: 0;
     transform: 0.4s;
   }
   .nav {
@@ -427,7 +426,7 @@ ul, li, p {
     }
 
     &__logo--white {
-      display: none;
+      display: block;
       position: relative;
       z-index: 4;
     }
@@ -519,7 +518,7 @@ ul, li, p {
     width: 390px;
     max-height: 100vh;
     top: 0;
-    left: 0;
+    left: -100%;    
     padding-right: 90px;
     padding-top: 90px;
     padding-left: 40px;
@@ -527,7 +526,7 @@ ul, li, p {
     background-image: linear-gradient(to left, #003C5F 0px, #003C5F 30px, #0A6397 30px, #0A6397 60px, #008DD2 60px, #008DD2 90px, #fff 90px, #fff 100%);
   }
   .menu--open {
-    left: -100%;    
+    left: 0;
     transform: 0.4s;
   }
   .nav {
@@ -662,7 +661,7 @@ ul, li, p {
     }
 
     &__logo--white {
-      display: none;
+      display: block;
       position: relative;
       z-index: 4;
     }
@@ -782,7 +781,7 @@ ul, li, p {
     width: 390px;
     max-height: 100vh;
     top: 0;
-    left: 0;
+    left: -100%;  
     padding-right: 90px;
     padding-top: 90px;
     padding-left: 40px;
@@ -790,7 +789,7 @@ ul, li, p {
     background-image: linear-gradient(to left, #003C5F 0px, #003C5F 30px, #0A6397 30px, #0A6397 60px, #008DD2 60px, #008DD2 90px, #fff 90px, #fff 100%);
   }
   .menu--open {
-    left: -100%;    
+    left: 0;
     transform: 0.4s;
   }
   .nav {
@@ -927,9 +926,8 @@ ul, li, p {
       background-color: white;
       position: relative;
     }
-
     &__logo--white {
-      display: none;
+      display: block;
       position: relative;
       z-index: 4;
     }
