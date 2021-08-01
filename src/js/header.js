@@ -4,7 +4,6 @@ let headerSvgLoc = document.querySelector('.info-h__icon--location');
 let headerSvgTime = document.querySelector('.info-h__icon--time');
 let headerSvgPhone = document.querySelector('.info-h__icon--phone');
 
-window.pageYOffset == 0;
 window.onscroll = function () {
 
   if (window.pageYOffset == 0) {

@@ -153,6 +153,11 @@ ul, li, p {
       font-size: 10px;
       line-height: 11px;
     }
+    &__link:hover,
+    &__link:focus {
+      background-color: #006ca1;
+    }
+
     &__s-link {
       display: none;
     }
@@ -182,6 +187,10 @@ ul, li, p {
       position: relative; 
       padding: 3px;
       z-index: 4;
+    }
+    &__btn:hover,
+    &__btn:focus {
+      box-shadow: 0 0 1px 1px #fff;
     }
     &__btn--click {
       background-color: white;
@@ -268,6 +277,10 @@ ul, li, p {
     &__icon--phone {
       color: #fff;
       transform: scaleX(-1);
+    }
+    &__icon--phone:hover,
+    &__icon--phone:focus {
+      color: #0010a1;
     }
     &__link--text {
       display: none;
@@ -390,6 +403,10 @@ ul, li, p {
       font-size: 10px;
       line-height: 11px;
     }
+    &__link:hover,
+    &__link:focus {
+      background-color: #006ca1;
+    }
     &__s-link {
       display: none;
     }
@@ -419,6 +436,10 @@ ul, li, p {
       position: relative; 
       padding: 5px;
       z-index: 4;
+    }
+    &__btn:hover,
+    &__btn:focus {
+      box-shadow: 0 0 1px 1px #fff;
     }
     &__btn--click {
       background-color: white;
@@ -503,6 +524,9 @@ ul, li, p {
       color: #fff;
       font-size: 11px;
       line-height: 13px;
+    }
+    &__link:hover {
+      background-color: #006ca1;
     }
   }
 }
@@ -617,6 +641,10 @@ ul, li, p {
       background-color: #0093FF;
       margin-top: 35px;
     }
+    &__link:hover,
+    &__link:focus {
+      background-color: #006ca1;
+    }
     &__social {
       position: absolute;
       top: 0;
@@ -654,6 +682,10 @@ ul, li, p {
       position: relative; 
       padding: 5px;
       z-index: 4;
+    }
+    &__btn:hover,
+    &__btn:focus {
+      box-shadow: 0 0 1px 1px #fff;
     }
     &__btn--click {
       background-color: white;
@@ -763,6 +795,10 @@ ul, li, p {
       text-align: center;
       padding: 6px 0;
       color: #fff;
+    }
+    &__link:hover,
+    &__link:focus {
+      background-color: #006ca1;
     }
     &__text {
       color: currentColor;
@@ -879,6 +915,10 @@ ul, li, p {
       background-color: #0093FF;
       margin-top: 45px;
     }
+    &__link:hover,
+    &__link:focus {
+      background-color: #006ca1;
+    }
     &__social {
       position: absolute;
       top: 0;
@@ -922,6 +962,10 @@ ul, li, p {
       padding: 5px;
       z-index: 4;
     }
+    &__btn:hover,
+    &__btn:focus {
+      box-shadow: 0 0 1px 1px #fff;
+    }
     &__btn--click {
       background-color: white;
       position: relative;
@@ -946,6 +990,7 @@ ul, li, p {
       left: 5px;
       transition: 0.2s;
     }
+
     &__btn::before {
       top: 7px;
     }
@@ -956,7 +1001,6 @@ ul, li, p {
       background-color: #3C464E;
       transform: rotate(-45deg);
       top: 50%;
-      transition: 0.2s;
     }
     &__btn--click::before {
       background-color: #3C464E;
@@ -1027,10 +1071,15 @@ ul, li, p {
       padding: 6px 0;
       color: #fff;
     }
+    &__link:hover,
+    &__link:focus {
+      background-color: #006ca1;
+    }
     &__text {
       color: currentColor;
     }
   }
+
 }
 @include media-up(xl) {
   .info-m {
@@ -1086,6 +1135,10 @@ ul, li, p {
       color: #fff;
       background-color: #0093FF;
       margin-top: 80px;
+    }
+    &__link:hover,
+    &__link:focus {
+      background-color: #006ca1;
     }
     &__social {
       position: absolute;
@@ -1214,6 +1267,10 @@ ul, li, p {
       text-align: center;
       padding: 8px 0;
       color: #fff;
+    }
+    &__link:hover,
+    &__link:focus {
+      background-color: #006ca1;
     }
     &__text {
       color: currentColor;
